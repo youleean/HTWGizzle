@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name = "viewport" content = "initial-scale = 1.0">
+	<title>HTWGizzle</title>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css"/>
+</head>
+<body>
+
+<div id="menu" class="sidebar">
+<h2>Menü</h2>
+	<ul>
+		<li><i class="icon-envelope"></i>  Dashboard</li>
+		<li><i class="icon-envelope"></i>  Stundenplan</li>
+		<li><i class="icon-envelope"></i>  Termine</li>
+		<li><i class="icon-envelope"></i>  Gebäude</li>
+		<li><i class="icon-envelope"></i>  Mensa</li>
+		<li><i class="icon-envelope"></i>  Bibliothek</li>
+		<li><i class="icon-envelope"></i>  Guthaben</li>
+		<li><i class="icon-envelope"></i>  Personen</li>
+		<li><i class="icon-envelope"></i>  Moodle</li>
+	</ul>
+</div>
+
+<div id="box">
+	<div id="overlay"></div>
+	<button id="menuBtn" class="boxBtn icon-envelope"></button>
+	<button id="msgsBtn" class="boxBtn"></button>
+	<div id="content-box">
+		test
+	</div>
+</div>
+<div id="msgs" class="sidebar">
+<h2>Nachrichten</h2>
+	<ul>
+		<li><b>Nachricht 1:</b>bla bla bla</li>
+		<li>Nachricht 2</li>
+		<li>Nachricht 3</li>
+		<li>Nachricht 4</li>
+		<li>Nachricht 5</li>
+		<li>Nachricht 6</li>
+		<li>Nachricht 7</li>
+		<li>Nachricht 8</li>
+	</ul>
+</div>
+	
+	
+<!-- Frameworks -->
+<script src="lib/jquery-1.9.1.min.js"></script>
+<script src="lib/bootstrap.min.js"></script>
+<!--<script src="lib/underscore-min.js"></script>
+<script src="lib/backbone-min.js"></script>-->
+<!-- Models/Views -->
+<!--
+<script src="js/models/example.js"></script>
+<script src="js/views/example.js"></script>
+-->
+<!-- App-Code -->
+<script type="text/javascript">
+
+$('#box').bind('touchmove', false);
+$('#menu').bind('touchmove', true);
+$('#msgs').bind('touchmove', true);
+$(document).bind('touchmove', false);
+	$(document).ready(function(){
+	
+		
+		/*Move box left(dir=1) and right(dir=0)*/
+		function moveBox (dir){
+		var direction='';
+		if(dir){
+			direction='-';
+			$('#msgs').show();
+		}else{
+			$('#menu').show();
+		}
+			$('#box').css('-webkit-transform', 'translate3d('+direction+'50%,0,0)');
+			$('#overlay').show();
+		}
+		function resetBox() {
+			$('#box').css('-webkit-transform', 'translate3d(0,0,0)');
+			$('#menu').delay(800).hide(0);
+			$('#msgs').delay(800).hide(0);
+			$('#overlay').hide();
+		};
+		$('#overlay').click(resetBox);
+		$('#menuBtn').click(function(){
+			moveBox(0);
+			//$('.boxToggle').click(resetBox);
+		})
+		
+		$('#msgsBtn').click(function(){
+			moveBox(1);
+			//$('.boxToggle').click(resetBox);
+		})
+	})
+</script>
+</body>
+</html>
