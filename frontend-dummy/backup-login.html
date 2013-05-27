@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lungo 2.1 - Example</title>
+    <meta name="description" content="">
+    <meta name="author" content="Javier Jiménez Villar (@soyjavi)">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- iPhone -->
+    <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPhone (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 -->
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPad -->
+    <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPad (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo/lungo.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+    <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+    <link rel="stylesheet" href="components/lungo/theme.lungo.css" id="theme-stylesheet">
+</head>
+
+<body class="app">
+
+   <section id="main" class="active">
+            <article id="splashMain" class="active indented splash" data-transition="slide">
+                <img src="https://upload.wikimedia.org/wikipedia/de/archive/5/58/20101127101623!Hs_konstanz_logo.svg">
+                <form class="roundeds">
+                   <input type="text" placeholder="HTWG Anmeldename" id="txt-signup-name" value="">
+                   <input type="password" placeholder="HTWG Passwort" id="txt-signup-password" value="">
+                   <a href="#second" data-router="section" class="button theme anchor large" data-icon="lock"><span class="icon lock"></span>Login</a>
+                </form>
+            </article>
+    </section>
+
+    <section id="second" data-transition="slide">
+        <article id="splashCourses" class="indented list scroll active" data-transition="slide">
+                <ul>
+                <li class="dark">
+                    <strong>
+                        Hallo NAME, bitte wähle deinen Studiengang aus
+                    </strong>
+                </li>
+                <li>
+                    <form>
+                        <fieldset data-icon="search"><span class="icon search"></span>
+                            <input type="search" placeholder="Durchsuchen...">
+                        </fieldset>
+                    </form>
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+               <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li data-action="chooseSemester" data-icon="plus-sign">
+                    <strong>AIT</strong><br>
+                    Automobilinformationstechnik
+                </li>
+            </ul>
+            </article>
+    </section>
+
+    
+    <section id="profileReady" data-transition="slide">
+     <article id="second-article" class="list active indented">
+            <li class="highlight" style="text-align:center;">
+                <div style="padding:30px;font-size:4em;text-align:center;"><span class="icon user"></span></div>
+                <strong>
+                    Dein Profil wird mit den folgenden Daten angelegt:
+                </strong>
+            </li>
+            <li>
+<strong>Name:</strong> Julian Sudendorf<br><br>
+<strong>Rolle:</strong> Student<br><br>
+<strong>Studiengang:</strong> AIT<br><br>
+<strong>Semester:</strong> 6
+</li><!--<li>
+            <strong>
+                   Möchtest du dieses Profil mit allen gespeicherten Einstellungen nutzen?
+                </strong>
+            </li>-->
+            <div>
+                <a href="#test" data-router="section" class="button anchor accept" data-label="Abschicken" data-action="success"></a><br><br>
+                <a href="#" class="button anchor cancel" data-label="Abbrechen" data-action="success"></a>
+            </div>
+        </article>
+    </section>
+
+    <section id="test" data-transition="" class="">
+        <header data-title="Dashboard">
+            <nav class="left">
+                <a href="#features" data-router="aside" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a href="#msgs" data-router="aside" data-icon="comments" data-count="2"></a>
+            </nav>
+        </header>
+
+        <article id="main-article" class="hide list indented active scroll">
+            <li class="highlight">
+                <strong>
+                   FERTIG!!!!
+                </strong>
+            </li>
+        </article>
+
+        <article id="second-article" class="list">
+            <li class="highlight">
+                <strong>
+                    A framework for developers who want to design, build and share cross device apps.
+                </strong>
+            </li>
+        </article>
+    </section>
+
+
+    <aside id="features">
+        <article class="active list">
+            <form>
+                <fieldset data-icon="search"><span class="icon search"></span>
+                    <input type="search" placeholder="Search...">
+                </fieldset>
+            </form>
+            <ul>
+                <li class="current"><a href="#main-article" data-router="article" data-icon="home"><strong> Dashboard</strong></a></li>
+                <li><a href="#main-article" data-router="article" data-icon="clock"><strong> Stundenplan</strong></a></li>
+                <li><a href="#second-article" data-router="article" data-icon="calendar"><strong> Termine</strong></a></li>
+                <li><a href="#test" data-router="section"><strong> Gebäude</strong></a></li>
+                <li><a href="#main-article" data-router="article"><strong> Mensa</strong></a></li>
+                <li><a href="#main-article" data-router="article"><strong> Bibliothek</strong></a></li>
+                <li><a href="#main-article" data-router="article"><strong> Guthaben</strong></a></li>
+                <li><a href="#main-article" data-router="article" data-icon="users"><strong> Personen</strong></a></li>
+                <li><a href="#main-article" data-router="article"><strong> Moodle</strong></a></li>
+    </ul>
+            </ul>
+        </article>
+    </aside>
+
+    <aside id="msgs" class="right">
+        <header data-title="Nachrichten"></header>
+        <article class="active list indented scroll">
+            <a href="#test" data-router="section" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></a><br><br>
+            <ul>
+                <li class="cancel">
+                    <strong>Abgabe</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li class="accept">
+                    <strong>Schein</strong><br>
+                    Automobilinformationstechnik
+                </li>
+                <li class="secondary">
+                    <strong>Labor</strong><br>
+                    Automobilinformationstechnik
+                </li>
+            </ul>
+        </article>
+    </aside>
+
+    <!-- Lungo - Dependencies -->
+    <script src="components/quojs/quo.js"></script>
+    <script src="components/lungo/lungo.js"></script>
+    <!-- Lungo - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'example'
+        });
+
+     /*   Lungo.Events.init({
+            'tap section li[data-action=chooseSemester]': function() {
+            Lungo.Notification.confirm({
+                icon: 'user',
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing.',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet nulla dolorum hic eum debitis dolorem expedita? Commodi molestiae tempora totam explicabo sed deserunt cum iusto eos perspiciatis ea in.',
+                accept: {
+                    icon: 'checkmark',
+                    label: 'Accept',
+                    callback: function(){ alert("Yes!"); }
+                },
+                cancel: {
+                    icon: 'close',
+                    label: 'Cancel',
+                    callback: function(){ alert("No!"); }
+                }
+            });
+        }
+    });*/
+
+     Lungo.Events.init({
+            'tap section li[data-action=chooseSemester]': function() {
+             Lungo.Notification.html('<a href="#" data-action="close" class="button anchor large text thin">1. Semester</a><a href="#" data-action="close" class="button anchor large text thin">2. Semester</a><a href="#" data-action="close" class="button anchor large text thin">3. Semester</a><a href="#" data-action="close" class="button anchor large text thin">4. Semester</a><a href="#" data-action="close" class="button anchor large text thin">5. Semester</a><a href="#" data-action="close" class="button anchor large text thin">6. Semester</a><a href="#profileReady" data-router="section" data-action="close" class="button anchor large text thin">7. Semester</a><a href="#" data-action="close" class="button anchor large text thin">8. Semester</a>', false);
+        }
+    });
+    </script>
+</body>
+</html>
+
+
