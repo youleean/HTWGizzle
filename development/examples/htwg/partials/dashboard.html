@@ -1,0 +1,29 @@
+<section id="dashboard" data-transition="slide" class="active">
+        <header data-title="Dashboard">
+            <nav class="left">
+                <a lab-aside="menu" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a lab-aside="msgs" data-icon="comments" ></a>
+            </nav>
+        </header>
+
+        <article id="main-article" class="hide list indented active scroll">
+            <li>
+                    <form>
+                        <fieldset data-icon="search">
+                            <input type="search" placeholder="Durchsuchen..." ng-model="query">
+                        </fieldset>
+                    </form>
+            </li>
+
+            <div class="courses">
+                <li ng-repeat="course in courses | filter:query" data-icon="plus-sign">
+                  <strong>{{course.shortName}}</strong><br>
+                  {{course.fullName}}
+                </li>
+            </div>
+        </article>
+
+    </section>
