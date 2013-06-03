@@ -1,0 +1,39 @@
+<section id="courses" data-transition="slide" class="active">
+        <header data-title="Studiengänge">
+            <nav class="left">
+                <a lab-aside="menu" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a lab-aside="msgs" data-icon="comments" ></a>
+            </nav>
+        </header>
+
+        <article id="main-article" class="list indented active scroll">
+            <li>
+                    <form>
+                        <fieldset data-icon="search">
+                            <input type="search" placeholder="Durchsuchen..." ng-model="query">
+                        </fieldset>
+                    </form>
+            </li>
+
+            <div class="coursesList">
+                <li ng-repeat="course in coursesList | filter:query" data-icon="plus-sign">
+                  <strong>{{course.shortName}}</strong><br>
+                  {{course.fullName}}
+                </li>
+            </div>
+        </article>
+
+        <article id="detail" class="list indented scroll">
+            <p>{{course.shortName}}</p>
+            <p>{{course.courseID}}</p>
+            <div class="schedule">
+                <li ng-repeat="day in course">
+                          <p><b>{{day.wochentag}}</b> - <i>{{day.Beginn}}</i> : {{day.Info}}</p>
+                </li>
+            </div>
+        </article>
+
+    </section>

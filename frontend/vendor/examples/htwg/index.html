@@ -1,0 +1,82 @@
+<html ng-app="htwgApp">
+    <head>
+        <title>HTWG App</title>
+
+        <meta name="HandheldFriendly" content="True">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta http-equiv="cleartype" content="on">
+
+        <link rel="stylesheet" type="text/css" href="../../components/lungo/lungo.css"/>
+        <link rel="stylesheet" type="text/css" href="../../components/lungo/lungo.icon.css"/>
+        <link rel="stylesheet" type="text/css" href="../../components/lungo/theme.lungo.css">
+        <script type="text/javascript" src="../../components/quojs/quo.debug.js"></script>
+        <script type="text/javascript" src="../../components/lungo-angular-bridge/lib/lungo.debug.js"></script>
+    </head>
+    <body class="app" lab-boot>
+
+        <section id="main" class="active">
+            <article id="splashMain" class="active indented splash" data-transition="slide">
+                <img src="img/htwg.svg">
+                <form class="roundeds">
+                   <input type="text" placeholder="HTWG Anmeldename" id="txt-signup-name" value="">
+                   <input type="password" placeholder="HTWG Passwort" id="txt-signup-password" value="">
+                   <a lab-aside="msgs" data-router="section" class="button theme anchor large" data-icon="lock"><span class="icon lock"></span>Login</a>
+                </form>
+            </article>
+        </section>
+
+        <aside id="menu">
+            <article class="active list">
+                <header data-title="Menü"></header>
+                <ul>
+                    <li class="current"><a href="#dashboard" data-router="article" data-icon="home"><strong> Dashboard</strong></a></li>
+                    <li><a href="#stundenplan" data-router="section" data-icon="time"><strong> Stundenplan</strong></a></li>
+                    <li><a href="#termine" data-router="article" data-icon="calendar"><strong> Termine</strong></a></li>
+                    <li><a href="#gebaude" data-router="section" data-icon="key"><strong> Gebäude</strong></a></li>
+                    <li><a href="#mensa" data-router="section" data-icon="food"><strong> Mensa</strong></a></li>
+                    <li><a href="#bibliothek" data-router="section" data-icon="book"><strong> Bibliothek</strong></a></li>
+                    <li><a href="#guthaben" data-router="section" data-icon="credit-card"><strong> Guthaben</strong></a></li>
+                    <li><a href="#personen" data-router="section" data-icon="group"><strong> Personen</strong></a></li>
+                    <li><a href="#moodle" data-router="section" data-icon="briefcase"><strong> Moodle</strong></a></li>
+                    <li><a href="#suche" data-router="section" data-icon="search"><strong> Suche</strong></a></li>
+                    <li><a href="#einstellungen" data-router="article" data-icon="cog"><strong> Einstellungen</strong></a></li>
+                </ul>
+            </article>
+        </aside>
+
+        <aside id="msgs" class="right">
+            <header data-title="Nachrichten"></header>
+            <article class="active list indented scroll">
+                <a href="#test" data-router="section" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></a><br><br>
+                <ul>
+                    <li class="cancel">
+                        <strong>Abgabe</strong><br>
+                        Automobilinformationstechnik
+                    </li>
+                    <li class="accept">
+                        <strong>Schein</strong><br>
+                        Automobilinformationstechnik
+                    </li>
+                    <li class="secondary">
+                        <strong>Labor</strong><br>
+                        Automobilinformationstechnik
+                    </li>
+                </ul>
+            </article>
+        </aside>
+
+        <lab-view></lab-view>
+
+        <!-- If you use build.phonegap.com DO NOT add the phonegap.js to your archive -->
+        <!--<script src="phonegap.js"></script>-->
+        <script type="text/javascript" src="../../components/angular/angular.js"></script>
+        <script type="text/javascript" src="../../src/lungo-angular-bridge.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/controller.js"></script>
+        <script type="text/javascript" src="js/services.js"></script>
+        <script src="../../components/angular/angular-resource.js"></script>
+    </body>
+</html>

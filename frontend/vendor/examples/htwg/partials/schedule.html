@@ -1,0 +1,31 @@
+<section id="schedule" data-transition="slide">
+        <header data-title="Montag">
+            <nav class="left">
+                <a href="#features" data-router="aside" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a href="#msgs" data-router="aside" data-icon="comments" ></a>
+            </nav>
+        </header>
+        <article id="stundenplanView" class="list indented active scroll">
+
+                    <div class="schedule">
+                         <div ng-repeat="day in schedule">
+                         <li class="anchor">
+                        <strong>
+                           {{day.wochentag}} - {{day.Beginn}}
+                        </strong>
+                    </li>
+                    <li class="accept">
+                        <div class="right tag blu">{{day.Raum}}</div>
+                        <strong>
+                            {{day.Info}}
+                        </strong><br>Dozent
+                    </li>
+                </div>
+                  </div>
+                   
+        </article>
+        
+    </section>
