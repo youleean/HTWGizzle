@@ -10,6 +10,12 @@
         </header>
 
         <article id="main-article" class="hide list indented active scroll">
+            <div class="weatherInfo">
+                <li>
+                    <strong>Wetter:</strong><br><br>
+                  <img src="{{weatherInfo.Bild}}" > <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong><br>
+                </li>
+            </div>
             <li>
                     <form>
                         <fieldset data-icon="search">
@@ -19,7 +25,7 @@
             </li>
 
             <div class="courses">
-                <li ng-repeat="course in courses | filter:query" data-icon="plus-sign">
+                <li ng-repeat="course in courses.courses | filter:query" data-icon="plus-sign">
                   <strong>{{course.shortName}}</strong><br>
                   {{course.fullName}}
                 </li>

@@ -1,7 +1,23 @@
 'use strict';
 
-function DashboardCtrl($scope, Course) {
+function loginController($scope, $http){
+	$scope.user = {};
+    $scope.submitLogin = function() {
+        $http({
+            method : 'POST',
+            url : 'http://localhost/slimexperiment/user',
+            data : $scope.user
+        }).success(function(data, status, headers, config) {
+    	$scope.dbResponse = data;
+    	console.log(data);
+    	localStorage.setItem(data);
+  })
+    }
+}
+
+function DashboardCtrl($scope, Course, Weather) {
    $scope.courses = Course.query();
+   $scope.weatherInfo = Weather.query();
 }
 
 function CoursesCtrl($scope, Course) {

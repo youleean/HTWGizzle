@@ -16,4 +16,6 @@ angular.module('htwgApp', ['Centralway.lungo-angular-bridge' , 'htwgServices']).
     $routeProvider.when('/settings', {templateUrl: "partials/setings.html", controller: "SettingsCtrl"});
     $routeProvider.otherwise({redirectTo: '/'});
     $locationProvider.html5Mode(false);
-  }]);  
+  }]).config(['$httpProvider', function($httpProvider) {
+    delete $httpProvider.defaults.headers.common["X-Requested-With"];
+}]);

@@ -18,13 +18,23 @@
     <body class="app" lab-boot>
 
         <section id="main" class="active">
-            <article id="splashMain" class="active indented splash" data-transition="slide">
+            <article id="splashMain" class="active indented splash" data-transition="slide" ng-controller="loginController">
                 <img src="img/htwg.svg">
                 <form class="roundeds">
-                   <input type="text" placeholder="HTWG Anmeldename" id="txt-signup-name" value="">
-                   <input type="password" placeholder="HTWG Passwort" id="txt-signup-password" value="">
-                   <a lab-aside="msgs" data-router="section" class="button theme anchor large" data-icon="lock"><span class="icon lock"></span>Login</a>
+                   <input type="text" placeholder="HTWG Anmeldename" id="txt-signup-name" ng-model="user.user" value="">
+                   <input type="password" placeholder="HTWG Passwort" id="txt-signup-password" ng-model="user.pw" value="">
+                  <!-- <a lab-aside="msgs" data-router="section" class="button theme anchor large" data-icon="lock"><span class="icon lock"></span>Login</a> -->
+                  <a data-icon="lock" class="button theme anchor large" ng-click="submitLogin()"><span class="icon lock"></span>Login</a>
                 </form>
+                <div class="dbResponse">
+                    <li>{{dbResponse.error}}</li>
+                    <li>{{dbResponse.user.userID}}</li>
+                    <li>{{dbResponse.user.nick}}</li>
+                    <li>{{dbResponse.user.fullName}}</li>
+                    <li>{{dbResponse.user.courseID}}</li>
+                    <li>{{dbResponse.user.hashedPw}}</li>
+                    <li>{{dbResponse.user.semester}}</li>
+                </div>
             </article>
         </section>
 
@@ -73,6 +83,7 @@
         <!-- If you use build.phonegap.com DO NOT add the phonegap.js to your archive -->
         <!--<script src="phonegap.js"></script>-->
         <script type="text/javascript" src="vendor/components/angular/angular.js"></script>
+        <script type="text/javascript" src="vendor/components/lawnchair/lawnchair-0.6.1.min.js"></script>
         <script type="text/javascript" src="vendor/src/lungo-angular-bridge.js"></script>
         <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript" src="js/controller.js"></script>
