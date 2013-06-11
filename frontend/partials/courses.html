@@ -19,7 +19,7 @@
             </li>
 
             <div class="coursesList">
-                <li ng-repeat="course in coursesList | filter:query" data-icon="plus-sign">
+                <li ng-repeat="course in coursesList.courses | filter:query" data-icon="plus-sign">
                   <strong>{{course.shortName}}</strong><br>
                   {{course.fullName}}
                 </li>

@@ -1,5 +1,5 @@
-<section id="rooms" data-transition="slide" class="active">
-    <header data-title="Räume">
+<section id="news" data-transition="slide" class="active">
+    <header data-title="Neuigkeiten">
         <nav class="left">
             <a lab-aside="menu" data-icon="menu"></a>
         </nav>
@@ -18,17 +18,12 @@
             </form>
         </li>
 
-        <div class="roomList">
-            <li ng-repeat="room in roomList.rooms | filter:query" data-icon="plus-sign">
-                <strong>{{room.name}}</strong><br>
-
+        <div class="news">
+            <li ng-repeat="news in news | filter:query" data-icon="plus-sign">
+                <strong>{{news.datum}}</strong><br>
+                {{news}}
             </li>
-        <div class="room">
-            <p>{{room.name}}</p>
-            <p>{{room.roomID}}</p>
-        </div>
         </div>
     </article>
-
 
 </section>

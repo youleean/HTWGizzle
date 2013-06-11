@@ -24,13 +24,21 @@ function CoursesCtrl($scope, Course) {
    $scope.coursesList = Course.query();
 }
 
+function NewsCtrl($scope, News) {
+    $scope.news = News.query();
+}
+
 
 function ScheduleCtrl($scope, Course) {
   $scope.schedule = Course.testabc();
 }
 
-function RoomListCtrl($scope) {
-  
+function RoomListCtrl($scope, Room) {
+    $scope.roomList = Room.queryAllRooms();
+}
+
+function RoomCtrl($scope, Room) {
+    $scope.room = Room.queryOneRoom();
 }
 
 function MensaCtrl($scope) {
@@ -55,5 +63,9 @@ function SearchCtrl($scope) {
 
 function SettingsCtrl($scope) {
   
+}
+
+function MessageCtrl($scope, $fetchMessage) {
+    $scope.messageList = $fetchMessage.fetch();
 }
 
