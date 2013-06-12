@@ -1,0 +1,24 @@
+<section id="updateProfile" data-transition="slide">
+     <article id="acceptProfile" class="list active indented">
+            <li class="highlight" style="text-align:center;">
+                <div style="padding:30px;font-size:4em;text-align:center;"><span class="icon user"></span></div>
+                <strong>
+                    Dein Profil wird mit den folgenden Daten angelegt:
+                </strong>
+            </li>
+            <li>
+<strong>Name:</strong> {{user.fullName}}<br><br>
+<strong>Rolle:</strong> {{user.roleID}}<br><br>
+<strong>Studiengang:</strong> {{user.updateCourse}}<br><br>
+<strong>Semester:</strong> {{user.updateSemester}}
+</li><!--<li>
+            <strong>
+                   Möchtest du dieses Profil mit allen gespeicherten Einstellungen nutzen?
+                </strong>
+            </li>-->
+            <div>
+                <button data-router="section" class="button anchor accept" data-label="Anlegen" ng-click="updateProfile()"></button><br><br>
+                <button class="button anchor cancel" data-label="Abbrechen" ></button>
+            </div>
+        </article>
+    </section>

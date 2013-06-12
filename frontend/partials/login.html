@@ -1,0 +1,12 @@
+<section id="login" class="active">
+            <article id="splashMain" class="active indented splash">
+                <img src="img/htwg.svg">
+                <div class="error">{{error.text}}</div>
+                <form class="roundeds">
+                   <input type="text" placeholder="HTWG Anmeldename" id="txt-signup-name" ng-model="user.user" value="">
+                   <input type="password" placeholder="HTWG Passwort" id="txt-signup-password" ng-model="user.pw" value="">
+                  <!-- <a lab-aside="msgs" data-router="section" class="button theme anchor large" data-icon="lock"><span class="icon lock"></span>Login</a> -->
+                  <button data-icon="lock" class="button theme anchor large" ng-click="submitLogin()"><span class="icon lock"></span>Login</button>
+                </form>
+            </article>
+</section>

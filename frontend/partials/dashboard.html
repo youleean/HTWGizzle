@@ -16,20 +16,6 @@
                   <img src="{{weatherInfo.Bild}}" > <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong><br>
                 </li>
             </div>
-            <li>
-                    <form>
-                        <fieldset data-icon="search">
-                            <input type="search" placeholder="Durchsuchen..." ng-model="query">
-                        </fieldset>
-                    </form>
-            </li>
-
-            <div class="courses">
-                <li ng-repeat="course in courses.courses | filter:query" data-icon="plus-sign">
-                  <strong>{{course.shortName}}</strong><br>
-                  {{course.fullName}}
-                </li>
-            </div>
         </article>
 
     </section>
