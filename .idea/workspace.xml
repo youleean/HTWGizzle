@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/app.js" afterPath="$PROJECT_DIR$/frontend/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/controller.js" afterPath="$PROJECT_DIR$/frontend/js/controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/partials/dashboard.html" afterPath="$PROJECT_DIR$/frontend/partials/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/services.js" afterPath="$PROJECT_DIR$/frontend/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -14,7 +13,7 @@
     <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370991716614" ignored="false" />
     <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
     <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370993972843" ignored="false" />
-    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371037841982" ignored="false" />
+    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371038053554" ignored="false" />
     <file path="/news.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987452427" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987635170" ignored="false" />
     <file path="/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987551977" ignored="false" />
@@ -22,7 +21,7 @@
     <file path="/room.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370989571079" ignored="false" />
     <file path="/messages.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370993472498" ignored="false" />
     <file path="/app.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371037506100" ignored="false" />
-    <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371037854111" ignored="false" />
+    <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371038300036" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +44,7 @@
       <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="34" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
+            <state line="50" column="29" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -54,7 +53,7 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/partials/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="44" selection-start="865" selection-end="865" vertical-scroll-proportion="0.38224852">
+            <state line="20" column="49" selection-start="901" selection-end="901" vertical-scroll-proportion="0.40236688">
               <folding />
             </state>
           </provider>
@@ -99,7 +98,7 @@
       <file leaf-file-name="courses.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/partials/courses.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="30" selection-start="0" selection-end="1475" vertical-scroll-proportion="0.0">
+            <state line="14" column="53" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
@@ -126,7 +125,7 @@
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+            <state line="40" column="17" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,9 +156,9 @@
         <option value="$PROJECT_DIR$/frontend/partials/roomList.html" />
         <option value="$PROJECT_DIR$/frontend/partials/room.html" />
         <option value="$PROJECT_DIR$/frontend/partials/messages.html" />
-        <option value="$PROJECT_DIR$/frontend/js/services.js" />
         <option value="$PROJECT_DIR$/frontend/js/app.js" />
         <option value="$PROJECT_DIR$/frontend/js/controller.js" />
+        <option value="$PROJECT_DIR$/frontend/js/services.js" />
         <option value="$PROJECT_DIR$/frontend/partials/dashboard.html" />
       </list>
     </option>
@@ -445,13 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/courses.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="30" selection-start="0" selection-end="1475" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/partials/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -480,23 +472,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/partials/courses.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="53" selection-start="606" selection-end="606" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="83" selection-end="83" vertical-scroll-proportion="0.0">
+        <state line="40" column="17" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="34" selection-start="1377" selection-end="1377" vertical-scroll-proportion="0.0">
+        <state line="50" column="29" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/partials/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="44" selection-start="865" selection-end="865" vertical-scroll-proportion="0.38224852">
+        <state line="20" column="49" selection-start="901" selection-end="901" vertical-scroll-proportion="0.40236688">
           <folding />
         </state>
       </provider>
