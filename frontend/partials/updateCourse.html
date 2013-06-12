@@ -1,0 +1,24 @@
+<section id="updateCourse" data-transition="slide">
+            <article id="splashCourses" class="indented list scroll active" data-transition="slide">
+                <ul>
+                <li class="dark">
+                    <strong>
+                        Hallo {{user.fullName}}, bitte wähle deinen Studiengang aus:
+                    </strong>
+                </li>
+                <li>
+                    <form>
+                        <fieldset data-icon="search">
+                            <input type="search" placeholder="Durchsuchen..." ng-model="query">
+                        </fieldset>
+                    </form>
+                </li>
+                <div class="courses">
+                <li ng-repeat="course in courses.courses | filter:query" ng-click="selectCourse(course.courseID)" data-icon="plus-sign">
+                  <strong>{{course.shortName}}</strong><br>
+                  {{course.fullName}}
+                </li>
+            </div>
+            </ul>
+            </article>
+</section>
