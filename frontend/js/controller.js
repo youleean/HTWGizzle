@@ -44,9 +44,10 @@ function loginCtrl($scope, $http, $location, User){
 	    }
 }
 
-function DashboardCtrl($scope, Course, Weather) {
+function DashboardCtrl($scope, Course, Weather, News) {
    $scope.courses = Course.query();
    $scope.weatherInfo = Weather.query();
+   $scope.news = News.query().news;
 }
 
 function updateCourseCtrl($scope, Course, $location, User) {
@@ -137,3 +138,4 @@ function MessageCtrl($scope, $fetchMessage) {
     $scope.messageList = $fetchMessage.fetch();
 }
 
+*/

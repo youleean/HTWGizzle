@@ -16,6 +16,11 @@
                   <img src="{{weatherInfo.Bild}}" > <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong><br>
                 </li>
             </div>
+            <li class="dark">News:</li>
+            <li ng-repeat="newsEntry in news" data-icon="plus-sign">
+                <strong>{{newsEntry.titel}}</strong><br>
+                {{newsEntry.content}}
+            </li>
         </article>
 
     </section>

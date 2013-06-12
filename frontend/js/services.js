@@ -36,4 +36,8 @@ angular.module('htwgServices', ['ngResource']).
   }, true);
 
   return user;
-});
+}).factory('News', function($resource){
+        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/news', {}, {
+            query: {method:'GET', isArray:false, cache : true}
+        });
+    })
