@@ -1,4 +1,4 @@
-<section id="room" data-transition="slide" class="active">
+<section id="room" data-transition="slide" class="active" ng-controller="RoomDetailCtrl">
     <header data-title="Raum">
         <nav class="left">
             <a lab-aside="menu" data-icon="menu"></a>
@@ -9,7 +9,7 @@
         </nav>
     </header>
 
-    <article id="main-article" class="list indented active scroll">
+    <article id="detail" class="list indented active scroll">
         <li>
             <form>
                 <fieldset data-icon="search">
@@ -17,10 +17,12 @@
                 </fieldset>
             </form>
         </li>
-            <div class="room">
-                <p>{{room.name}}</p>
-                <p>{{room.roomID}}</p>
-            </div>
+            <li ng-repeat="day in schedule" >
+                {{day.wochentag}}<br>
+                {{day.beginn}}<br>
+                {{day.ende}}<br>
+                {{day.raum}}<br>
+            </li>
         </div>
     </article>
 

@@ -92,20 +92,28 @@ function updateProfileCtrl($scope, Course, $location, User, $http) {
 	    }
 }
 
-
-/*
-function CoursesCtrl($scope, Course) {
-   $scope.coursesList = Course.query();
-}
-
-
-function ScheduleCtrl($scope, Course) {
-  $scope.schedule = Course.testabc();
-}
-
-function RoomListCtrl($scope, Room) {
+function RoomListCtrl($scope, Room, $location) {
     $scope.roomList = Room.queryAllRooms();
+    //console.log($scope.roomList);
+
+    $scope.showRoom = function(roomID) {
+
+        $location.path("/room/detail/" + roomID);
+    }
 }
+
+function RoomDetailCtrl($scope, Room, $routeParams) {
+       $scope.schedule = Room.queryOneRoom({roomID: $routeParams.id});
+}
+/*
+ function CoursesCtrl($scope, Course) {
+ $scope.coursesList = Course.query();
+ }
+
+
+ function ScheduleCtrl($scope, Course) {
+ $scope.schedule = Course.testabc();
+ }
 
 function RoomCtrl($scope, Room) {
     $scope.room = Room.queryOneRoom();
