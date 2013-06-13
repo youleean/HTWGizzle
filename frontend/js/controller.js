@@ -128,17 +128,22 @@ function LectureCtrl($scope, Course, $routeParams) {
 }
 
 
-function MessageCtrl($scope, FetchMessage, Message, $routeParams, User) {
+function MessageCtrl($scope, FetchMessage, Message, $routeParams, User, localStorage) {
 
-   User.nick = "jusudend";
+    User.nick = "jusudend";
     User.hashPw = "b444ac06613fc8d63795be9ad0beaf55011936ac";
-    var timestamp = "2013-01-01%2012:12:12";
-
-
+    var timestamp = "2013-01-01 12:12:12";
 
     $scope.showMessages = FetchMessage.fetchAllMessages({nick:User.nick, hashedpw: User.hashPw, timestamp: timestamp});
-    console.log($scope.showMessages);
-    }
+    Message.n = $scope.showMessages;
+
+    console.log(Message.message);
+
+}
+
+function MessageDetailCtrl($scope, $routeParams, $localStorage) {
+
+}
    /* var nachricht = {
         titel: "bla",
         content: "affenkacke",

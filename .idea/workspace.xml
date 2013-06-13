@@ -2,31 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/partials/detailLecture.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/partials/detailMessage.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/partials/detailSchedule.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/frontend/partials/newMessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/app.js" afterPath="$PROJECT_DIR$/frontend/js/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/controller.js" afterPath="$PROJECT_DIR$/frontend/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/partials/dashboard.html" afterPath="$PROJECT_DIR$/frontend/partials/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/index.html" afterPath="$PROJECT_DIR$/frontend/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/partials/schedule.html" afterPath="$PROJECT_DIR$/frontend/partials/schedule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/js/services.js" afterPath="$PROJECT_DIR$/frontend/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/partials/messages.html" afterPath="$PROJECT_DIR$/frontend/partials/messages.html" />
     </list>
     <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371160622465" ignored="false" />
+    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371160720802" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371128257737" ignored="false" />
     <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370991716614" ignored="false" />
     <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
     <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371123702943" ignored="false" />
-    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371131197910" ignored="false" />
+    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371165205444" ignored="false" />
     <file path="/news.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987452427" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371128257737" ignored="false" />
     <file path="/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987551977" ignored="false" />
     <file path="/roomList.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370989577186" ignored="false" />
     <file path="/room.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370989571079" ignored="false" />
-    <file path="/messages.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371130494791" ignored="false" />
+    <file path="/messages.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371162090290" ignored="false" />
     <file path="/app.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371037506100" ignored="false" />
     <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371117198519" ignored="false" />
     <file path="/updateCourse.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371076536645" ignored="false" />
@@ -57,7 +49,7 @@
       <file leaf-file-name="controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="1" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.029310346">
+            <state line="137" column="20" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.66360503">
               <folding />
             </state>
           </provider>
@@ -66,7 +58,7 @@
       <file leaf-file-name="room.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/partials/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="13" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.769231">
               <folding />
             </state>
           </provider>
@@ -84,7 +76,16 @@
       <file leaf-file-name="messages.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/partials/messages.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="58" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+            <state line="21" column="108" selection-start="833" selection-end="833" vertical-scroll-proportion="-13.730769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newMessage.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/partials/newMessage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -93,7 +94,7 @@
       <file leaf-file-name="roomList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/partials/roomList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+            <state line="21" column="98" selection-start="788" selection-end="820" vertical-scroll-proportion="-13.730769">
               <folding />
             </state>
           </provider>
@@ -102,7 +103,7 @@
       <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="18" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.0">
+            <state line="58" column="21" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,8 +136,8 @@
         <option value="$PROJECT_DIR$/frontend/partials/updateCourse.html" />
         <option value="$PROJECT_DIR$/frontend/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/frontend/js/app.js" />
-        <option value="$PROJECT_DIR$/frontend/partials/messages.html" />
         <option value="$PROJECT_DIR$/frontend/js/services.js" />
+        <option value="$PROJECT_DIR$/frontend/partials/messages.html" />
         <option value="$PROJECT_DIR$/frontend/js/controller.js" />
       </list>
     </option>
@@ -145,8 +146,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="776" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -220,6 +221,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTWGizzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTWGizzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTWGizzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTWGizzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="partials" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -254,8 +295,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../htwgserver/app" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -294,14 +335,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2682334" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2710779" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -377,11 +418,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/partials/personList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -427,16 +463,23 @@
         <state line="15" column="37" selection-start="662" selection-end="662" vertical-scroll-proportion="0.040564373" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/room.html">
+    <entry file="file://$PROJECT_DIR$/frontend/partials/roomList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
+        <state line="21" column="98" selection-start="788" selection-end="820" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/partials/roomList.html">
+    <entry file="file://$PROJECT_DIR$/frontend/partials/newMessage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/partials/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="710" selection-end="710" vertical-scroll-proportion="-11.769231">
           <folding />
         </state>
       </provider>
@@ -450,21 +493,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/partials/messages.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="58" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+        <state line="21" column="108" selection-start="833" selection-end="833" vertical-scroll-proportion="-13.730769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="18" selection-start="2614" selection-end="2614" vertical-scroll-proportion="0.0">
+        <state line="58" column="21" selection-start="2242" selection-end="2242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="1" selection-start="2960" selection-end="2960" vertical-scroll-proportion="0.029310346">
+        <state line="137" column="20" selection-start="3667" selection-end="3667" vertical-scroll-proportion="0.66360503">
           <folding />
         </state>
       </provider>
