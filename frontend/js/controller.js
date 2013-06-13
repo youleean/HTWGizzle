@@ -47,7 +47,6 @@ function loginCtrl($scope, $http, $location, User){
 function DashboardCtrl($scope, Course, Weather, News) {
    $scope.courses = Course.query();
    $scope.weatherInfo = Weather.query();
-   console.log(News.query());
    $scope.news = News.query();
 }
 

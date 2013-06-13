@@ -14,7 +14,7 @@
                     </form>
                 </li>
                 <div class="courses">
-                <li ng-repeat="course in courses.courses | filter:query" ng-click="selectCourse(course.courseID)" data-icon="plus-sign">
+                <li ng-repeat="course in courses.courses | filter:query" ng-click="selectCourse(course.courseID)" class="selectable" data-icon="plus-sign">
                   <strong>{{course.shortName}}</strong><br>
                   {{course.fullName}}
                 </li>

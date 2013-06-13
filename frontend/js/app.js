@@ -20,7 +20,7 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/moodle', {templateUrl: "partials/moodle.html", controller: "MoodleCtrl"});
     $routeProvider.when('/search', {templateUrl: "partials/search.html", controller: "SearchCtrl"});
     $routeProvider.when('/settings', {templateUrl: "partials/setings.html", controller: "SettingsCtrl"});*/
-    $routeProvider.otherwise({redirectTo: '/boot'});
+    $routeProvider.otherwise({redirectTo: '/boot', templateUrl: "partials/boot.html", controller: "BaseCtrl"});
     $locationProvider.html5Mode(false);
   }]).config(['$httpProvider', function($httpProvider) {
     delete $httpProvider.defaults.headers.common["X-Requested-With"];

@@ -18,10 +18,24 @@
             </div>
             <li class="dark">News:</li>
             <div class="news">
-            <li ng-repeat="newsEntry in news.news" data-icon="plus-sign">
-                <strong>{{newsEntry.titel}}</strong><br>
-                {{newsEntry.content}}
+            <li ng-repeat="newsEntry in news.news" data-image="{{newsEntry.image}}" >
+                <strong><i>{{newsEntry.date}}</i> - {{newsEntry.titel}}</strong><br>
+                <p>{{newsEntry.content}}</p>
             </li>
+            <li class="dark">Heute:</li>
+                <li class="accept">
+                    <div class="right tag blu">Raum</div>
+                    <strong>
+                       Abgabe Regelungstechnik
+                    </strong><br>14:00 Uhr
+                </li>
+            <li class="dark">Diese Woche:</li>
+                <li class="accept">
+                    <div class="right tag blu">Raum</div>
+                    <strong>
+                        Abgabe Regelungstechnik
+                    </strong><br>14:00 Uhr
+                </li>
             </div>
         </article>
 
