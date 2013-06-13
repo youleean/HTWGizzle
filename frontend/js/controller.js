@@ -45,13 +45,13 @@ function loginCtrl($scope, $http, $location, User){
 }
 
 function DashboardCtrl($scope, Course, Weather, News) {
-   $scope.courses = Course.query();
+   $scope.courses = Course.queryAll();
    $scope.weatherInfo = Weather.query();
    $scope.news = News.query();
 }
 
 function updateCourseCtrl($scope, Course, $location, User) {
-   $scope.courses = Course.query();
+   $scope.courses = Course.Allquery();
    $scope.user = User;
 
    $scope.selectCourse = function(courseID) {
@@ -105,6 +105,29 @@ function RoomDetailCtrl($scope, Room, $routeParams) {
        $scope.schedule = Room.queryOneRoom({roomID: $routeParams.id});
 }
 
+
+function ScheduleCtrl($scope, Course, $routeParams) {
+    $scope.schedule = Course.querySingle({courseID: $routeParams.courseID, semester: $routeParams.semester});
+}
+
+function LectureCtrl($scope, Course, $routeParams) {
+    var Lecture = {
+        dozent: "Herr Affenkacke",
+        name: "Superfach 500",
+        termine: {
+            Montag: {
+                begin:"8:00"
+            },
+            Dienstag: {
+                begin:"11:00"
+            }
+        }
+    }
+
+    $scope.lecture = Lecure;
+}
+
+
 function MessageCtrl($scope, FetchMessage, Message, $routeParams, User) {
 
    User.nick = "jusudend";
@@ -133,9 +156,7 @@ function MessageCtrl($scope, FetchMessage, Message, $routeParams, User) {
  }
 
 
- function ScheduleCtrl($scope, Course) {
- $scope.schedule = Course.testabc();
- }
+
 
 function RoomCtrl($scope, Room) {
     $scope.room = Room.queryOneRoom();

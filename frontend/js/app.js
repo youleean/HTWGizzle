@@ -12,6 +12,12 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/rooms', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
     $routeProvider.when('/room/detail/:id', {templateUrl: "partials/room.html", controller: "RoomDetailCtrl"});
     $routeProvider.when('/messages/fetch', {templateUrl: "partials/messages.html", controller: "MessageCtrl"});
+    $routeProvider.when('/message/new', {templateUrl: "partials/newMessage.html"});
+    $routeProvider.when('/message/edit', {templateUrl: "partials/newMessage.html"});
+    $routeProvider.when('/messages/detail/:id', {templateUrl: "partials/detailMessage.html"});
+    $routeProvider.when('/schedule', {templateUrl: "partials/schedule.html", controller: "ScheduleCtrl"});
+    $routeProvider.when('/schedules/detail/:courseID/:semester', {templateUrl: "partials/detailSchedule.html", controller: "ScheduleCtrl"});
+    $routeProvider.when('/lectures/detail/:lectureID', {templateUrl: "partials/detailLecture.html", controller: "LectureCtrl"});
     /*$routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/news', {templateUrl: "partials/news.html", controller: "NewsCtrl"});

@@ -1,0 +1,61 @@
+<section id="message" data-pull="normal" data-transition="slide" class="active">
+    <header data-title="Neue Nachrichten">
+        <nav class="left">
+            <a lab-aside="menu" data-icon="menu"></a>
+        </nav>
+        <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+        <nav class="right">
+            <a lab-aside="msgs" data-icon="comments" ></a>
+        </nav>
+    </header>
+
+    <article id="new"  class="list active scroll">
+        <div class="form margined">
+            <fieldset data-icon="plus">
+                <label>Für:</label>
+                <select class="custom">
+                    <option value="1">MMI</option>
+                    <option value="2">RTOS</option>
+                    <option value="3">EMV</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Art:</label>
+                <select class="custom">
+                    <option value="1">Abgabe</option>
+                    <option value="2">Schein</option>
+                    <option value="3">Klausur</option>
+                    <option value="4">Terminänderung</option>
+                </select>
+            </fieldset>
+            <!--<fieldset>
+                <label>LSF-Update</label>
+                <br>
+                <input type="range" min="0" max="1" class="checkbox active" value="1">
+            </fieldset>-->
+            <fieldset data-icon="pencil">
+                <label>Titel:</label>
+                <input type="text">
+            </fieldset>
+            <fieldset data-icon="date">
+                <label>Datum:</label>
+                <input type="date">
+            </fieldset>
+            <fieldset data-icon="date">
+                <label>Zeit:</label>
+                <input type="time">
+            </fieldset>
+            <fieldset>
+                <label>Nachricht:</label>
+                <br>
+                <textarea rows="200"></textarea>
+            </fieldset>
+        </div>
+        <div class="one row">
+            <div class="five columns"><div class="margined"><button class="button anchor accept" data-label="Abschicken"></button></div></div>
+            <div class="five columns"><div class="margined"><button class="button anchor cancel" data-label="Verwerfen"></button></div></div>
+        </div>
+
+    </article>
+
+</section>
