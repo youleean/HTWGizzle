@@ -40,4 +40,12 @@ angular.module('htwgServices', ['ngResource']).
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/news', {}, {
             query: {method:'GET', isArray:false, cache : true}
         });
+}).factory('Room', function($resource){
+
+        var selectedRoom = undefined;
+
+        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/rooms/:roomID', {}, {
+            queryAllRooms: {method:'GET', isArray:false, cache: true},
+            queryOneRoom:{method:'GET', isArray:true, cache:true}
+        })
     })

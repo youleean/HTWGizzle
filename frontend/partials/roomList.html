@@ -18,8 +18,8 @@
             </form>
         </li>
 
-        <div class="roomList">
-            <li ng-repeat="room in roomList.rooms | filter:query" data-icon="plus-sign">
+        <div class="affenkacke">
+            <li ng-repeat="room in roomList.rooms | filter:query" ng-click="showRoom(room.roomID)" data-icon="plus-sign">
                 <strong>{{room.name}}</strong><br>
 
             </li>
