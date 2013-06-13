@@ -7,8 +7,8 @@ htwgApp.value('localStorage', window.localStorage);
 angular.module('htwgServices', ['ngResource']).
     factory('Course', function($resource){
   return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/courses/:courseID/:semester', {}, {
-    query: {method:'GET', isArray:false, cache : true},
-    testabc: {method: "GET", params: {courseID: "4510",semester: "6"}, isArray: true, cache : true}
+    queryAll: {method:'GET', isArray:false, cache : true},
+    querySingle: {method: "GET", isArray: true, cache : true}
   });
 }).factory('Weather', function($resource){
   return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/weather', {}, {
@@ -41,11 +41,12 @@ angular.module('htwgServices', ['ngResource']).
             query: {method:'GET', isArray:false, cache : true}
         });
 }).factory('Room', function($resource){
-
-        var selectedRoom = undefined;
-
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/rooms/:roomID', {}, {
             queryAllRooms: {method:'GET', isArray:false, cache: true},
             queryOneRoom:{method:'GET', isArray:true, cache:true}
+        })
+    }).factory('Lecture', function($resource){
+        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/lectures/:lectureID', {}, {
+            querySingle:{method:'GET', isArray:true, cache:true}
         })
     })
