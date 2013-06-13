@@ -11,6 +11,7 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/updateProfile', {templateUrl: "partials/updateProfile.html", controller: "updateProfileCtrl"});
     $routeProvider.when('/rooms', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
     $routeProvider.when('/room/detail/:id', {templateUrl: "partials/room.html", controller: "RoomDetailCtrl"});
+    $routeProvider.when('/messages/fetch', {templateUrl: "partials/messages.html", controller: "MessageCtrl"});
     /*$routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/news', {templateUrl: "partials/news.html", controller: "NewsCtrl"});
