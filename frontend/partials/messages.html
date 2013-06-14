@@ -18,8 +18,9 @@
             </form>
         </li>
 
-        <div class="messageList">
-            <li ng-repeat="message in showMessages.message | filter:query" ng-click="showMessage(message.msgID)" data-icon="plus-sign">
+        <div class="showMessages">
+            <li ng-repeat="message in showMessages.message | filter:query" data-icon="plus-sign">
+                sdfgsdfghdsfgh
                 <strong>{{message.msgID}}</strong><br>
                 {{message.name}}
             </li>

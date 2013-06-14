@@ -93,7 +93,7 @@ function updateProfileCtrl($scope, Course, $location, User, $http) {
 
 function RoomListCtrl($scope, Room, $location) {
     $scope.roomList = Room.queryAllRooms();
-    //console.log($scope.roomList);
+    console.log($scope.roomList);
 
     $scope.showRoom = function(roomID) {
 
@@ -128,16 +128,36 @@ function LectureCtrl($scope, Course, $routeParams) {
 }
 
 
-function MessageCtrl($scope, FetchMessage, Message, $routeParams, User, localStorage) {
+function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
 
     User.nick = "jusudend";
     User.hashPw = "b444ac06613fc8d63795be9ad0beaf55011936ac";
     var timestamp = "2013-01-01 12:12:12";
-
+/*
     $scope.showMessages = FetchMessage.fetchAllMessages({nick:User.nick, hashedpw: User.hashPw, timestamp: timestamp});
     Message.n = $scope.showMessages;
-
+    localStorage.setItem('hallo', 'key');
     console.log(Message.message);
+*/
+    console.log('hallo');
+        var data = {"userNick":"jusudend","hashedPW":"b444ac06613fc8d63795be9ad0beaf55011936ac","timestamp":"2013-01-01 12:12:12"}
+        $scope.fetchMessages = function() {
+            $http({
+                url: 'http://uc-projects.in.htwg-konstanz.de/htwgapp/message/fetch',
+                method: "POST",
+                data: data
+
+            }).success(function(data) {
+                    $scope.dbResponse = data;
+                    console.log(JSON.stringify(data));
+                    if(data.error != undefined){
+                        $scope.error = data.error;
+                    }
+
+                });
+        }
+       $scope.showMessages = $scope.fetchMessages();
+       console.log($scope.showMessages);
 
 }
 
