@@ -9,7 +9,7 @@
         </nav>
     </header>
 
-    <article id="main-article" class="list indented active scroll">
+    <article id="fetch" class="list indented active scroll">
         <li>
             <form>
                 <fieldset data-icon="search">
@@ -19,9 +19,9 @@
         </li>
 
         <div class="messageList">
-            <li ng-repeat="message in messageList.courses | filter:query" data-icon="plus-sign">
+            <li ng-repeat="message in showMessages.message | filter:query" ng-click="showMessage(message.msgID)" data-icon="plus-sign">
                 <strong>{{message.msgID}}</strong><br>
-                {{message.content}}
+                {{message.name}}
             </li>
         </div>
     </article>

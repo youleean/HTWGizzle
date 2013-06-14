@@ -127,6 +127,34 @@ function LectureCtrl($scope, Course, $routeParams) {
     $scope.lecture = Lecture;
 }
 
+
+function MessageCtrl($scope, FetchMessage, Message, $routeParams, User, localStorage) {
+
+    User.nick = "jusudend";
+    User.hashPw = "b444ac06613fc8d63795be9ad0beaf55011936ac";
+    var timestamp = "2013-01-01 12:12:12";
+
+    $scope.showMessages = FetchMessage.fetchAllMessages({nick:User.nick, hashedpw: User.hashPw, timestamp: timestamp});
+    Message.n = $scope.showMessages;
+
+    console.log(Message.message);
+
+}
+
+function MessageDetailCtrl($scope, $routeParams, $localStorage) {
+
+}
+   /* var nachricht = {
+        titel: "bla",
+        content: "affenkacke",
+        absender: "julian Sudendorf",
+        ID: "25"
+    }
+    Message.messageKey = nachricht;
+*/
+
+
+
 /*
  function CoursesCtrl($scope, Course) {
  $scope.coursesList = Course.query();

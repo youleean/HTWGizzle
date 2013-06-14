@@ -49,4 +49,28 @@ angular.module('htwgServices', ['ngResource']).
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/lectures/:lectureID', {}, {
             querySingle:{method:'GET', isArray:true, cache:true}
         })
+    }).factory('Room', function($resource){
+        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/rooms/:roomID', {}, {
+            queryAllRooms: {method:'GET', isArray:false, cache: true},
+            queryOneRoom:{method:'GET', isArray:true, cache:true}
+        })
+}).factory('Message', function($rootScope, localStorage) {
+
+        var LOCAL_STORAGE_ID = 'message',
+            messageString = localStorage[LOCAL_STORAGE_ID];
+
+        var message = messageString ? JSON.parse(messageString) : {
+            messages: undefined
+        };
+
+        $rootScope.$watch(function() { return message; }, function() {
+            localStorage[LOCAL_STORAGE_ID] = JSON.stringify(message);
+        }, true);
+
+        return message;
+        //http://uc-projects.in.htwg-konstanz.de/htwgapp/fetchmessage/jusudend/b444ac06613fc8d63795be9ad0beaf55011936ac/2013-01-01%2012:12:12
+}).factory('FetchMessage', function($resource){
+        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/fetchmessage/:nick/:hashedpw/:timestamp', {}, {
+            fetchAllMessages: {method:'GET', isArray:false, cache: true}
+        })
     })
