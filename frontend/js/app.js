@@ -5,6 +5,7 @@
 var htwgApp = angular.module('htwgApp', ['Centralway.lungo-angular-bridge' , 'htwgServices']);
 
 htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+    $routeProvider.when('/login', {templateUrl: "partials/login.html", controller: "LoginCtrl"});
     $routeProvider.when('/dashboard', {templateUrl: "partials/dashboard.html", controller: "DashboardCtrl"});
     $routeProvider.when('/updateCourse', {templateUrl: "partials/updateCourse.html", controller: "updateCourseCtrl"});
     $routeProvider.when('/updateSemester', {templateUrl: "partials/updateSemester.html", controller: "updateSemesterCtrl"});

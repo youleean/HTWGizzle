@@ -13,7 +13,7 @@ function BaseCtrl($scope, $http, $location) {
 	}
 }
 
-function loginCtrl($scope, $http, $location, User){
+function LoginCtrl($scope, $http, $location, User){
 
 		$scope.user = {};
 		$scope.error = {};
@@ -21,7 +21,7 @@ function loginCtrl($scope, $http, $location, User){
 	    $scope.submitLogin = function() {
 	        $http({
 	            method : 'POST',
-	            url : 'http://localhost/slimexperiment/user',
+	            url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/user',
 	            data : $scope.user
 	        }).success(function(data, status, headers, config) {
 		    	$scope.dbResponse = data;
@@ -51,7 +51,7 @@ function DashboardCtrl($scope, Course, Weather, News) {
 }
 
 function updateCourseCtrl($scope, Course, $location, User) {
-   $scope.courses = Course.Allquery();
+   $scope.courses = Course.queryAll();
    $scope.user = User;
 
    $scope.selectCourse = function(courseID) {
@@ -124,7 +124,7 @@ function LectureCtrl($scope, Course, $routeParams) {
         }
     }
 
-    $scope.lecture = Lecure;
+    $scope.lecture = Lecture;
 }
 
 /*
