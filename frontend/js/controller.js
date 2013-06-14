@@ -139,25 +139,24 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
     localStorage.setItem('hallo', 'key');
     console.log(Message.message);
 */
-    console.log('hallo');
-        var data = {"userNick":"jusudend","hashedPW":"b444ac06613fc8d63795be9ad0beaf55011936ac","timestamp":"2013-01-01 12:12:12"}
-        $scope.fetchMessages = function() {
+
+        var data = {userNick:"jusudend",hashedPW:"b444ac06613fc8d63795be9ad0beaf55011936ac",timestamp:"2013-01-01 12:12:12"};
             $http({
                 url: 'http://uc-projects.in.htwg-konstanz.de/htwgapp/message/fetch',
                 method: "POST",
                 data: data
 
             }).success(function(data) {
-                    $scope.dbResponse = data;
-                    console.log(JSON.stringify(data));
+                    $scope.showMessages= data;
+                    console.log(data);
                     if(data.error != undefined){
                         $scope.error = data.error;
                     }
 
                 });
-        }
-       $scope.showMessages = $scope.fetchMessages();
-       console.log($scope.showMessages);
+
+      // $scope.showMessages = $scope.fetchMessages();
+      // console.log($scope.showMessages);
 
 }
 
