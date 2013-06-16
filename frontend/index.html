@@ -43,23 +43,42 @@
             </article>
         </aside>
 
-        <aside id="msgs" class="right">
+        <aside id="msgs" class="right" ng-controller="MessageCtrl">
             <header data-title="Nachrichten"></header>
             <article class="active list indented scroll">
                 <a href="#test" data-router="section" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></a><br><br>
                 <ul>
-                    <li class="cancel">
-                        <strong>Abgabe</strong><br>
-                        Automobilinformationstechnik
-                    </li>
-                    <li class="accept">
-                        <strong>Schein</strong><br>
-                        Automobilinformationstechnik
-                    </li>
-                    <li class="secondary">
-                        <strong>Labor</strong><br>
-                        Automobilinformationstechnik
-                    </li>
+
+                        <div class="showKlausur">
+                            <li class="cancel" ng-repeat="message in showKlausur | filter: Klausur" data-icon="plus-sign">
+                                <strong>{{message.content}}</strong><br>
+                                {{message.type}}
+                            </li>
+                        </div>
+                    <div class="showSchein">
+                        <li class="accept" ng-repeat="message in showSchein | filter: Klausur" data-icon="plus-sign">
+                            <strong>{{message.content}}</strong><br>
+                            {{message.type}}
+                        </li>
+                    </div>
+                    <div class="showTutorium">
+                        <li class="secondary" ng-repeat="message in showTutorium | filter: Klausur" data-icon="plus-sign">
+                            <strong>{{message.content}}</strong><br>
+                            {{message.type}}
+                        </li>
+                    </div>
+                    <div class="beer">
+                        <li ng-repeat="message in showLabor | filter: Klausur" data-icon="plus-sign">
+                            <strong>{{message.msgID}}</strong><br>
+                            {{message.type}}
+                        </li>
+                    </div>
+                    <div class="fire">
+                        <li ng-repeat="message in showVorlesung | filter: Klausur" data-icon="plus-sign">
+                            <strong>{{message.content}}</strong><br>
+                            {{message.type}}
+                        </li>
+                    </div>
                 </ul>
             </article>
         </aside>

@@ -147,16 +147,42 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
                 data: data
 
             }).success(function(data) {
-                    $scope.showMessages= data;
-                    console.log(data);
+                    //$scope.showMessages = data;
+                    //console.log(data);
+                    var typeMapKlausur = {};
+                    var typeMapSchein = {};
+                    var typeMapTutorium = {};
+                    var typeMapLabor = {};
+                    var typeMapVorlesung = {};
+                    var i = null;
+                    for (i = 0; data.message.length > i; i += 1) {
+                        if(data.message[i].type === "Schein")
+                            typeMapSchein[data.message[i].type] = data.message[i];
+                        else if(data.message[i].type === "Klausur")
+                            typeMapKlausur[data.message[i].type] = data.message[i];
+                        else if(data.message[i].type === "Tutorium")
+                            typeMapTutorium[data.message[i].type] = data.message[i];
+                        else if(data.message[i].type === "Labor")
+                            typeMapLabor[data.message[i].type] = data.message[i];
+                        else if(data.message[i].type === "Vorlesung")
+                            typeMapVorlesung[data.message[i].type] = data.message[i];
+
+                        localStorage.setItem("message " + i, ["msgID: " + data.message[i].msgID, "publisher: " + data.message[i].fullName,
+                            "type: " + data.message[i].type,  "eventDate: " + data.message[i].eventDate,
+                            "content: " + data.message[i].content,  "lectureID: " + data.message[i].lectureID, "timestamp: " + data.message[i].timestamp + "}"]);
+
+                    }
+                    $scope.showKlausur = typeMapKlausur;
+                    $scope.showSchein = typeMapSchein;
+                    $scope.showTutorium = typeMapTutorium;
+                    $scope.showLabor = typeMapLabor;
+                    $scope.showVorlesung = typeMapVorlesung;
+                    console.log($scope.showKlausur);
                     if(data.error != undefined){
                         $scope.error = data.error;
                     }
 
                 });
-
-      // $scope.showMessages = $scope.fetchMessages();
-      // console.log($scope.showMessages);
 
 }
 
