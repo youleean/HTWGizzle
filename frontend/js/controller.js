@@ -1,7 +1,17 @@
 'use strict';
 
-function BaseCtrl($scope, $http, $location) {
-   if(localStorage.getItem("user")===null){
+function BaseCtrl($scope, $http, $location, User, CoreData) {
+   if(CoreData.courses == undefined){
+       $http({
+           method : 'GET',
+           url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/coredata'
+       }).success(function(data, status, headers, config) {
+            CoreData.courses = data.courses;
+            CoreData.rooms = data.rooms;
+            //CoreData.age =
+           })
+   }
+   if(User.userID==undefined){
 		$location.path("/login");
 	}else{
 		var user = JSON.parse(localStorage.getItem("user"));
@@ -45,17 +55,20 @@ function LoginCtrl($scope, $http, $location, User){
 }
 
 function DashboardCtrl($scope, Course, Weather, News) {
-   $scope.courses = Course.queryAll();
+   //$scope.courses = Course.queryAll();
    $scope.weatherInfo = Weather.query();
    $scope.news = News.query();
 }
 
-function updateCourseCtrl($scope, Course, $location, User) {
-   $scope.courses = Course.queryAll();
+function updateCourseCtrl($scope, CoreData, $location, User) {
+    console.log(CoreData.courses);
+    console.log(User);
+   $scope.courses = CoreData.courses;
    $scope.user = User;
 
-   $scope.selectCourse = function(courseID) {
-   	User.updateCourse=courseID;
+   $scope.selectCourse = function(courseID, courseName) {
+   	User.updateCourseID=courseID;
+    User.updateCourseName=courseName;
    	$location.path("/updateSemester");
    }
 
@@ -69,25 +82,39 @@ function updateSemesterCtrl($scope, Course, $location, User) {
    }
 }
 
-function updateProfileCtrl($scope, Course, $location, User, $http) {
+function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
 	$scope.user = User;
+  //  var test = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
+   // console.log(test);
 
    $scope.updateProfile = function() {
    	var updateData = {
    		user: User.nick,
    		pw: User.hashPw,
-   		courseID: User.updateCourse,
+   		courseID: User.updateCourseID,
    		semester: User.updateSemester
    	}
-   	console.log(JSON.stringify(updateData));
+
+   	//console.log(JSON.stringify(updateData));
    	$http({
 	            method : 'POST',
 	            url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/user/update',
 	            data : JSON.stringify(updateData)
 	        }).success(function(data, status, headers, config) {
-		    		$location.path("/dashboard");
+                    User.userID = data.user.userID;
+                    User.courseID = data.user.courseID;
+                    User.roleID = data.user.roleID;
+                    User.nick = data.user.nick;
+                    User.fullName = data.user.fullName;
+                    User.hashPw = data.user.hashPw;
+                    User.semester = data.user.semester;
+                    //var test = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
+
+                    Schedule.schedule = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
+		    		//$location.path("/dashboard");
 		    	
 	  		})
+
 	    }
 }
 
@@ -106,8 +133,10 @@ function RoomDetailCtrl($scope, Room, $routeParams) {
 }
 
 
-function ScheduleCtrl($scope, Course, $routeParams) {
-    $scope.schedule = Course.querySingle({courseID: $routeParams.courseID, semester: $routeParams.semester});
+function ScheduleCtrl($scope, Course, $routeParams, Schedule) {
+   // $scope.schedule = Course.querySingle({courseID: $routeParams.courseID, semester: $routeParams.semester});
+
+    $scope.schedule = Schedule.schedule;
 }
 
 function LectureCtrl($scope, Course, $routeParams) {
@@ -128,10 +157,10 @@ function LectureCtrl($scope, Course, $routeParams) {
 }
 
 
-function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
+function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User, $location) {
 
-    User.nick = "jusudend";
-    User.hashPw = "b444ac06613fc8d63795be9ad0beaf55011936ac";
+    //User.nick = "jusudend";
+    //User.hashPw = "b444ac06613fc8d63795be9ad0beaf55011936ac";
     var timestamp = "2013-01-01 12:12:12";
 /*
     $scope.showMessages = FetchMessage.fetchAllMessages({nick:User.nick, hashedpw: User.hashPw, timestamp: timestamp});
@@ -140,7 +169,7 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
     console.log(Message.message);
 */
 
-        var data = {userNick:"jusudend",hashedPW:"b444ac06613fc8d63795be9ad0beaf55011936ac",timestamp:"2013-01-01 12:12:12"};
+        var data = {userNick:User.nick,hashedPW:User.hashPw,timestamp:"2013-01-01 12:12:12"};
             $http({
                 url: 'http://uc-projects.in.htwg-konstanz.de/htwgapp/message/fetch',
                 method: "POST",
@@ -154,7 +183,9 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User) {
                     }
 
                 });
-
+    $scope.newMsg = function() {
+        $location.path("/message/new");
+    }
       // $scope.showMessages = $scope.fetchMessages();
       // console.log($scope.showMessages);
 

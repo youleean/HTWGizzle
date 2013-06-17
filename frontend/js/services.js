@@ -8,7 +8,7 @@ angular.module('htwgServices', ['ngResource']).
     factory('Course', function($resource){
   return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/courses/:courseID/:semester', {}, {
     queryAll: {method:'GET', isArray:false, cache : true},
-    querySingle: {method: "GET", isArray: true, cache : true}
+    querySingle: {method: "GET", isArray: false, cache : true}
   });
 }).factory('Weather', function($resource){
   return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/weather', {}, {
@@ -16,27 +16,59 @@ angular.module('htwgServices', ['ngResource']).
   });
 }).factory('User', function($rootScope, localStorage) {
 
-  var LOCAL_STORAGE_ID = 'user',
-      userString = localStorage[LOCAL_STORAGE_ID];
+        var LOCAL_STORAGE_ID = 'user',
+            userString = localStorage[LOCAL_STORAGE_ID];
 
-  var user = userString ? JSON.parse(userString) : {
-    userID: undefined,
-    courseID: undefined,
-    roleID: undefined,
-    nick: undefined,
-    fullName: undefined,
-    hashPw: undefined,
-    semester: undefined,
-    updateSemester: undefined,
-    updateCourse: undefined
-  };
+        var user = userString ? JSON.parse(userString) : {
+            userID: undefined,
+            courseID: undefined,
+            roleID: undefined,
+            nick: undefined,
+            fullName: undefined,
+            hashPw: undefined,
+            semester: undefined,
+            updateSemester: undefined,
+            updateCourseID: undefined,
+            updateCourseName: undefined
+        };
 
-  $rootScope.$watch(function() { return user; }, function() {
-    localStorage[LOCAL_STORAGE_ID] = JSON.stringify(user);
-  }, true);
+        $rootScope.$watch(function() { return user; }, function() {
+            localStorage[LOCAL_STORAGE_ID] = JSON.stringify(user);
+        }, true);
 
-  return user;
-}).factory('News', function($resource){
+        return user;
+    }).factory('Schedule', function($rootScope, localStorage) {
+
+        var LOCAL_STORAGE_ID = 'schedule',
+            schedulestring = localStorage[LOCAL_STORAGE_ID];
+
+        var schedule = schedulestring ? JSON.parse(schedulestring) : {
+            schedule: undefined
+        };
+
+        $rootScope.$watch(function() { return schedule; }, function() {
+            localStorage[LOCAL_STORAGE_ID] = JSON.stringify(schedule);
+        }, true);
+
+        return schedule;
+    }).factory('CoreData', function($rootScope, localStorage) {
+
+        var LOCAL_STORAGE_ID = 'coredata',
+            corestring = localStorage[LOCAL_STORAGE_ID];
+
+        var CoreData = corestring ? JSON.parse(corestring) : {
+            courses: undefined,
+            persons: undefined,
+            rooms: undefined,
+            age: undefined
+        };
+
+        $rootScope.$watch(function() { return CoreData; }, function() {
+            localStorage[LOCAL_STORAGE_ID] = JSON.stringify(CoreData);
+        }, true);
+
+        return CoreData;
+    }).factory('News', function($resource){
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/news', {}, {
             query: {method:'GET', isArray:false, cache : true}
         });

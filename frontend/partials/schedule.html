@@ -1,5 +1,5 @@
-<section id="schedules" data-transition="slide">
-        <header data-title="Montag">
+<section id="schedule" data-transition="slide">
+        <header data-title="Stundenplan">
             <nav class="left">
                 <a href="#features" data-router="aside" data-icon="menu"></a>
             </nav>
@@ -11,7 +11,7 @@
         <article id="detail" class="list indented active scroll">
 
                     <div class="schedule">
-                         <div ng-repeat="day in schedule">
+                         <div ng-repeat="day in schedule.course">
                          <li class="anchor">
                         <strong>
                            {{day.wochentag}} - {{day.Beginn}}

@@ -19,7 +19,8 @@
 
         <section id="main">
             <article id="splash" class="active splash">
-                <img src="img/htwg.svg">
+                <img src="img/htwg.svg"><br><br>
+                <div class="error">Initializing app...</div>
             </article>
         </section>
 
@@ -29,7 +30,7 @@
                 <header data-title="Menü"></header>
                 <ul>
                     <li class="current"><a href="#dashboard" data-router="article" data-icon="home"><strong> Dashboard</strong></a></li>
-                    <li><a href="#stundenplan" data-router="section" data-icon="time"><strong> Stundenplan</strong></a></li>
+                    <li><a href="#schedule" data-router="section" data-icon="time"><strong> Stundenplan</strong></a></li>
                     <li><a href="#termine" data-router="article" data-icon="calendar"><strong> Termine</strong></a></li>
                     <li><a href="#gebaude" data-router="section" data-icon="key"><strong> Gebäude</strong></a></li>
                     <li><a href="#mensa" data-router="section" data-icon="food"><strong> Mensa</strong></a></li>
@@ -45,21 +46,14 @@
 
         <aside id="msgs" class="right">
             <header data-title="Nachrichten"></header>
-            <article class="active list indented scroll">
-                <a href="#test" data-router="section" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></a><br><br>
+            <article class="active list indented scroll" ng-controller="MessageCtrl">
+                <button class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign" ng-click="newMsg()"></button><br><br>
                 <ul>
-                    <li class="cancel">
-                        <strong>Abgabe</strong><br>
-                        Automobilinformationstechnik
+                    <li ng-repeat="message in showMessages.message" class="cancel">
+                        <strong>{{message.type}}: {{message.name}}</strong><br>
+                        Datum: {{message.eventDate}}<br>
                     </li>
-                    <li class="accept">
-                        <strong>Schein</strong><br>
-                        Automobilinformationstechnik
-                    </li>
-                    <li class="secondary">
-                        <strong>Labor</strong><br>
-                        Automobilinformationstechnik
-                    </li>
+
                 </ul>
             </article>
         </aside>
