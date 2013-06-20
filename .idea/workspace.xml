@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand">
-      <change type="DELETED" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\partials\news.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="$PROJECT_DIR$/js/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/dashboard.html" afterPath="$PROJECT_DIR$/partials/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/detailLecture.html" afterPath="$PROJECT_DIR$/partials/detailLecture.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/detailMessage.html" afterPath="$PROJECT_DIR$/partials/detailMessage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/person.html" afterPath="$PROJECT_DIR$/partials/person.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/quota.html" afterPath="$PROJECT_DIR$/partials/quota.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/room.html" afterPath="$PROJECT_DIR$/partials/room.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/schedule.html" afterPath="$PROJECT_DIR$/partials/schedule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services.js" afterPath="$PROJECT_DIR$/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand" />
     <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371765505707" ignored="false" />
@@ -252,6 +238,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTWGizzle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
