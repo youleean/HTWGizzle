@@ -1,0 +1,52 @@
+<section id="quota" data-transition="slide">
+        <header data-title="Mensa">
+            <nav class="left">
+                <a lab-aside="menu" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a lab-aside="msgs" data-icon="comments" ></a>
+            </nav>
+        </header>
+    <article id="guthabenView" class="list indented active scroll">
+        <li class="anchor">
+            <strong>
+                Druckerkonto
+            </strong>
+        </li>
+        <li class="" data-icon="print">
+            <strong>
+                {{data.printer.value}} €
+            </strong><br>Verfügbarer Betrag<br>
+
+        </li>
+        <li class="anchor">
+            <strong>
+                Z-Laufwerk
+            </strong>
+        </li>
+        <li class="" data-icon="desktop">
+            <strong>
+                {{data.zDrive.value}}
+            </strong><br>
+            Speicherplatz belegt auf Z-Laufwerk
+        </li>
+        <form class="" data-progress="74%">
+        </form>
+        <li class="anchor">
+            <strong>
+               Mailkonto
+            </strong>
+        </li>
+        <li class="" data-icon="envelope-alt">
+            <strong>
+                {{data.printer.value}}
+            </strong><br>
+            Speicherplatz belegt von Mailkonto
+        </li>
+        <form class="" data-progress="{{data.mail.usedSpace.value}}%">
+        </form>
+
+    </article>
+        
+    </section>

@@ -1,0 +1,41 @@
+<section id="schedule" data-transition="slide">
+        <header data-title="Stundenplan">
+            <nav class="left">
+                <a lab-aside="menu" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a lab-aside="msgs" data-icon="comments" ></a>
+            </nav>
+        </header>
+    <article id="detail" class="list indented active scroll">
+        <div class="schedule">
+            <div ng-repeat="(KWnum,KW) in myschedule" ng-show="KWnum==kalenderwoche">
+                <li class="anchor">
+                    <strong>
+                        Kalenderwoche {{KWnum}}
+                    </strong>
+                </li>
+                <div ng-repeat="(daynum,day) in KW">
+                    <li class="anchor">
+                        <strong>
+                            {{displayDay(daynum)}}
+                        </strong>
+                    </li>
+                    <li class="accept"  ng-repeat="course in day">
+                        <div class="right tag blu">{{course.roomName}}</div>
+                        <strong>
+                            {{course.name}}
+                        </strong><br>
+                        Dozent: {{course.firstName}} {{course.lastName}}<br>
+                        {{course.startTime}} Uhr - {{course.endTime}} Uhr
+
+                    </li>
+                </div>
+
+            </div>
+        </div>
+
+    </article>
+        
+    </section>

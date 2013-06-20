@@ -1,0 +1,42 @@
+<section id="mensa" data-transition="slide">
+        <header data-title="Mensa">
+            <nav class="left">
+                <a lab-aside="menu" data-icon="menu"></a>
+            </nav>
+            <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+            <nav class="right">
+                <a lab-aside="msgs" data-icon="comments" ></a>
+            </nav>
+        </header>
+        <article id="mensaList" class="list indented active scroll">
+            <div ng-repeat="day in mensa">
+                <li class="dark">{{day.day}}</li>
+                <li class="{{day.stammessen}}" data-icon="food">
+                    <strong>
+                        Stammessen
+                    </strong><br>
+                    {{day.stammessen}}
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Wahlessen 1
+                    </strong><br>
+                    {{day.wahlessen1}}
+
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Wahlessen 2
+                    </strong><br>
+                    {{day.wahlessen2}}
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Beilagen
+                    </strong><br>
+                    {{day.beilagen}}
+                </li></div>
+            
+        </article>
+        
+    </section>
