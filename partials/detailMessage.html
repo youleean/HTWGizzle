@@ -1,5 +1,5 @@
 <section id="messages" data-transition="slide" class="active">
-    <header data-title="TITEL">
+    <header data-title="">
         <nav class="left">
             <a lab-aside="menu" data-icon="menu"></a>
         </nav>
@@ -13,15 +13,15 @@
         <div class="margined form">
             <fieldset>
                 <label>Fach:</label>
-                {{message.lectureID}}
+                {{message.name}}
             </fieldset>
             <fieldset>
                 <label>Art:</label>
-                {{message.Type}}
+                {{message.type}}
             </fieldset>
             <fieldset data-icon="user">
                 <label>Absender:</label>
-                {{message.publisher}}
+                {{message.fullName}}
             </fieldset>
             <fieldset data-icon="calendar">
                 <label>Datum:</label>
@@ -29,20 +29,18 @@
             </fieldset>
             <fieldset data-icon="time">
                 <label>Zeit:</label>
-                9:00 Uhr
+                {{message.eventDate}}
             </fieldset>
             <fieldset>
                 <label>Nachricht:</label>
                 <br><br>
-<p>{{message.content}}</p>            </fieldset>
-
-            {{message}}
+<p>{{message.content}}</p>   <br><br>         </fieldset>
 
 
         </div>
-        <div class="one row">
+        <div class="one row" ng-show="showEditBtn()">
             <div class="margined">
-                 <button class="button anchor blue" data-label="Bearbeiten"></button>
+                 <button class="button anchor blue" ng-click="editMsg()" data-label="Bearbeiten"></button>
             </div>
         </div>
     </article>

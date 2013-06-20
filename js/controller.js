@@ -13,7 +13,9 @@ function BaseCtrl($scope, $http, $location, User, CoreData, Mensa, MensaCall, Da
            })
    }
 
-   Mensa.food = MensaCall.query({date: Date});
+    Mensa.food = MensaCall.query({date: Date});
+
+
    if(User.userID==undefined){
 		$location.path("/login");
 	}else{
@@ -42,6 +44,7 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 		    	console.log(JSON.stringify(data));
 		    	if(data.error != undefined){
 		    		$scope.error = data.error;
+                    return;
 		    	}
 		    	if(data.user != null){
 		    		User.userID = data.user.userID;
@@ -59,7 +62,7 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 
                     }
 
-                if(User.courseID != undefined){
+                if(User.courseID != undefined && User.courseID != "0"){
                     $location.path("/dashboard");
                 }else{
                     $location.path("/updateCourse");
@@ -68,20 +71,22 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 	    }
 }
 
-function DashboardCtrl($scope, Course, Weather, News, Mensa, Schedule, User, Date) {
+function DashboardCtrl($scope, Course, Weather, News, Mensa, Schedule, User, Date, MensaCall, Message) {
    //$scope.courses = Course.queryAll();
     if(Schedule.schedule == undefined){
         Schedule.schedule = Course.querySingle({courseID: User.courseID, semester: User.semester});
     }
-   //$scope.date = Date;
-   $scope.mensa = Mensa.food.mensa[Date];
+  // Mensa.food = MensaCall.query({date: Date});
+   $scope.myDate = Date;
    $scope.weatherInfo = Weather.query();
    $scope.news = News.query();
+   $scope.messages = Message;
+   $scope.mensa = Mensa['food']['mensa'][Date];
 }
 
 function updateCourseCtrl($scope, CoreData, $location, User) {
-    console.log(CoreData.courses);
-    console.log(User);
+    //console.log(CoreData.courses);
+    //console.log(User);
    $scope.courses = CoreData.courses;
    $scope.user = User;
 
@@ -101,7 +106,7 @@ function updateSemesterCtrl($scope, Course, $location, User) {
    }
 }
 
-function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
+function updateProfileCtrl($scope, Course, $location, User, $http, Schedule, Lectures) {
 	$scope.user = User;
 
    $scope.updateProfile = function() {
@@ -127,6 +132,10 @@ function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
                     User.semester = data.user.semester;
                     //var test = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
 
+                    if(data.lectures != null){
+                        Lectures.lectures = data.lectures;
+
+                    }
 
 		    		$location.path("/dashboard");
 		    	
@@ -140,11 +149,16 @@ function RoomListCtrl($scope, CoreData, $location) {
 
     $scope.showRoom = function(roomID) {
         $location.path("/room/detail/" + roomID);
+
     }
 }
 
-function RoomDetailCtrl($scope, Room, $routeParams) {
-       $scope.schedule = Room.queryOneRoom({roomID: $routeParams.id});
+function RoomDetailCtrl($scope, Room, $routeParams, $location, $route) {
+    $scope.room = Room.queryOneRoom({roomID: $routeParams.id});
+    $scope.showLecture = function(lectureID) {
+        $location.path("/lectures/detail/" + lectureID);
+        $route.reload();
+    }
 }
 
 
@@ -191,8 +205,11 @@ function ScheduleCtrl($scope, Course, $routeParams, Schedule, $location) {
     }
 }
 
-function LectureCtrl($scope, Course, $routeParams, Lecture) {
+function LectureCtrl($scope, Course, $routeParams, Lecture, $location) {
     $scope.lecture = Lecture.querySingle({lectureID: $routeParams.lectureID});
+    $scope.showPerson = function(personID){
+        $location.path("/person/detail/" + personID)
+    }
 }
 
 
@@ -211,7 +228,7 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User, $
 */
 
     $scope.showMessage = function(lectureID){
-        $location.path("/lmessages/detail/" + lectureID);
+        $location.path("/messages/detail/" + lectureID);
     }
 
     $scope.newMsg = function(){
@@ -225,37 +242,17 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User, $
                 data: data
 
             }).success(function(data) {
-                    //$scope.showMessages = data;
-                    //console.log(data);
-                    var typeMapKlausur = {};
-                    var typeMapSchein = {};
-                    var typeMapTutorium = {};
-                    var typeMapLabor = {};
-                    var typeMapVorlesung = {};
-                    var i = null;
-                    for (i = 0; data.message.length > i; i += 1) {
-                        if(data.message[i].type === "Schein")
-                            typeMapSchein[data.message[i].type] = data.message[i];
-                        else if(data.message[i].type === "Klausur")
-                            typeMapKlausur[data.message[i].type] = data.message[i];
-                        else if(data.message[i].type === "Tutorium")
-                            typeMapTutorium[data.message[i].type] = data.message[i];
-                        else if(data.message[i].type === "Labor")
-                            typeMapLabor[data.message[i].type] = data.message[i];
-                        else if(data.message[i].type === "Vorlesung")
-                            typeMapVorlesung[data.message[i].type] = data.message[i];
-                        Message.message = data.message[0];
-                        /*localStorage.setItem('message ' + i, ['{"msgID": ' + data.message[i].msgID, ',"publisher": ' + data.message[i].fullName,
-                            ',"type": ' + data.message[i].type,  ',"eventDate": ' + data.message[i].eventDate,
-                            ',"content": ' + data.message[i].content,  ',"lectureID": ' + data.message[i].lectureID, ',"timestamp": ' + data.message[i].timestamp + '}']);*/
 
+                    var i = null;
+                   // Message.message = data.message;
+                    for (i = 0; data.message.length > i; i += 1) {
+                        Message[data.message[i].msgID] = data.message[i];
+                        Message[data.message[i].msgID]['datum'] = (""+data.message[i].eventDate).slice(0,10);
                     }
-                    $scope.showKlausur = typeMapKlausur;
-                    $scope.showSchein = typeMapSchein;
-                    $scope.showTutorium = typeMapTutorium;
-                    $scope.showLabor = typeMapLabor;
-                    $scope.showVorlesung = typeMapVorlesung;
-                    console.log($scope.showKlausur);
+
+                    console.log(Message);
+                    $scope.messages = Message;
+                    //console.log($scope.showKlausur);
                     if(data.error != undefined){
                         $scope.error = data.error;
                     }
@@ -267,9 +264,53 @@ function MessageCtrl($scope, $http, FetchMessage, Message, $routeParams, User, $
 
 }
 
-function MessageDetailCtrl($scope, $routeParams) {
-    console.log(JSON.parse(localStorage.getItem("message "+$routeParams.id)));
-    //$scope.message = JSON.parse(localStorage.getItem("message "+$routeParams.id));
+function MessageDetailCtrl($scope, Message, $routeParams, User, $location) {
+    //console.log(Message[$routeParams.id]);
+    $scope.message = Message[$routeParams.id];
+
+    $scope.editMsg = function(){
+        $location.path("/message/edit/" + $routeParams.id);
+    }
+
+    $scope.showEditBtn = function(){
+        if(Message[$routeParams.id]['userID'] == User.userID){
+            return true;
+        }else{
+            return false;
+        }
+    }
+}
+
+function UpdateMessageCtrl($scope, User, $http, Lectures, Message, $routeParams) {
+
+    $scope.input =  Message[$routeParams.id];
+
+    $scope.lectures = Lectures.lectures;
+    $scope.sendMessage = function(){
+        var data = {
+            courseID: User.courseID,
+            userNick: User.nick,
+            userID: User.userID,
+            hashedPW: User.hashPw,
+            lectureID: $scope.input.lectureID,
+            msgTypeID: $scope.input.art,
+            eventDate: $scope.input.date + " " +  $scope.input.time + ":00",
+            content: $scope.input.content,
+            roleID: User.roleID,
+            lsf: false
+
+        }
+        $http({
+            method : 'POST',
+            url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/message/update',
+            data : data
+        }).success(function(data, status, headers, config) {
+                $scope.success = '<li>Nachricht verschickt!</li>';
+                $location.path("/dashboard");
+
+            })
+        //console.log(data);
+    }
 }
 
 function NewMessageCtrl($scope, User, $http, Lectures) {
@@ -333,7 +374,7 @@ function PersonDetailCtrl($scope, Person, $routeParams) {
 
 function MensaCtrl($scope, Date, Mensa) {
     $scope.date = Date;
-    console.log(Mensa['food']['mensa'][Date]);
+   // console.log(Mensa['food']['mensa'][Date]);
     $scope.mensa = Mensa.food.mensa;
 }
 
@@ -351,7 +392,14 @@ function QuotaCtrl($scope, User, $http) {
         url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/quota',
         data : JSON.stringify(POSTdata)
     }).success(function(data, status, headers, config) {
-           console.log(data);
+            var zLimit = data.zDrive.limit.replace(/[A-Za-z$-]/g, "");
+            var zUsed = data.zDrive.value.replace(/[A-Za-z$-]/g, "");
+            var percent = (zUsed/zLimit)* 100;
+            var free = zLimit-zUsed;
+
+            data.zDrive.percent = percent;
+            data.zDrive.free = free;
+            console.log(data);
             $scope.data = data;
         })
 

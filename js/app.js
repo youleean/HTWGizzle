@@ -18,9 +18,8 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/persons/alphabetical', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
     $routeProvider.when('/persons/ordered', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
     $routeProvider.when('/person/detail/:id', {templateUrl: "partials/person.html", controller: "PersonDetailCtrl"});
-    $routeProvider.when('/messages/fetch', {templateUrl: "partials/messages.html", controller: "MessageCtrl"});
     $routeProvider.when('/message/new', {templateUrl: "partials/newMessage.html", controller: "NewMessageCtrl"});
-    $routeProvider.when('/message/edit', {templateUrl: "partials/newMessage.html"});
+    $routeProvider.when('/message/edit/:id', {templateUrl: "partials/updateMessage.html", controller: "UpdateMessageCtrl"});
     $routeProvider.when('/messages/detail/:id', {templateUrl: "partials/detailMessage.html", controller: "MessageDetailCtrl"});
     $routeProvider.when('/schedule', {templateUrl: "partials/schedule.html", controller: "ScheduleCtrl"});
     $routeProvider.when('/schedules/detail/:courseID/:semester', {templateUrl: "partials/detailSchedule.html", controller: "ScheduleCtrl"});

@@ -89,7 +89,7 @@ angular.module('htwgServices', ['ngResource']).
 }).factory('Room', function($resource){
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/rooms/:roomID', {}, {
             queryAllRooms: {method:'GET', isArray:false, cache: true},
-            queryOneRoom:{method:'GET', isArray:true, cache:true}
+            queryOneRoom:{method:'GET', isArray:false, cache:true}
         })
     }).factory('Person', function($resource){
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/persons/:personID', {}, {
@@ -102,11 +102,6 @@ angular.module('htwgServices', ['ngResource']).
     }).factory('Lecture', function($resource){
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/lecture/:lectureID', {}, {
             querySingle:{method:'GET', isArray:false, cache:true}
-        })
-    }).factory('Room', function($resource){
-        return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/rooms/:roomID', {}, {
-            queryAllRooms: {method:'GET', isArray:false, cache: true},
-            queryOneRoom:{method:'GET', isArray:true, cache:true}
         })
     }).factory('Message', function($rootScope, localStorage) {
 

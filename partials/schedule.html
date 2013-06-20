@@ -8,24 +8,34 @@
                 <a lab-aside="msgs" data-icon="comments" ></a>
             </nav>
         </header>
-        <article id="detail" class="list indented active scroll">
-
-                    <div class="schedule">
-                         <div ng-repeat="day in myschedule.course">
-                         <li class="anchor">
+    <article id="detail" class="list indented active scroll">
+        <div class="schedule">
+            <div ng-repeat="(KWnum,KW) in myschedule" ng-show="KWnum==kalenderwoche">
+                <li class="anchor">
+                    <strong>
+                        Kalenderwoche {{KWnum}}
+                    </strong>
+                </li>
+                <div ng-repeat="(daynum,day) in KW">
+                    <li class="anchor">
                         <strong>
-                           {{day.wochentag}} - {{day.Beginn}}
+                            {{displayDay(daynum)}}
                         </strong>
                     </li>
-                    <li class="accept selectable" ng-click="showLecture(131943)">
-                        <div class="right tag blu">{{day.Raum}}</div>
+                    <li class="accept"  ng-repeat="course in day" ng-click=showLecture(course.lectureID)>
+                        <div class="right tag blu">{{course.roomName}}</div>
                         <strong>
-                            {{day.Info}}
-                        </strong><br>Dozent
+                            {{course.name}}
+                        </strong><br>
+                        Dozent: {{course.firstName}} {{course.lastName}}<br>
+                        {{course.startTime}} Uhr - {{course.endTime}} Uhr
+
                     </li>
                 </div>
-                  </div>
-                   
-        </article>
+
+            </div>
+        </div>
+
+    </article>
         
     </section>

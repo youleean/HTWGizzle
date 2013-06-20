@@ -2,43 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/test/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/quota.html" />
-      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\photomap\Gruntfile.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\photomap\Gruntfile.js" />
+      <change type="DELETED" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\partials\news.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\app.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="$PROJECT_DIR$/js/controller.js" />
-      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\controllers.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/dashboard.html" afterPath="$PROJECT_DIR$/partials/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/detailLecture.html" afterPath="$PROJECT_DIR$/partials/detailLecture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/detailMessage.html" afterPath="$PROJECT_DIR$/partials/detailMessage.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/mensa.html" afterPath="$PROJECT_DIR$/partials/mensa.html" />
-      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\test\e2e\scenarios.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\test\e2e\scenarios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/person.html" afterPath="$PROJECT_DIR$/partials/person.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/quota.html" afterPath="$PROJECT_DIR$/partials/quota.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/room.html" afterPath="$PROJECT_DIR$/partials/room.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/schedule.html" afterPath="$PROJECT_DIR$/partials/schedule.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/services.js" afterPath="$PROJECT_DIR$/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371739160728" ignored="false" />
+    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371765505707" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370873184418" ignored="false" />
     <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637361199" ignored="false" />
     <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
-    <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371730417249" ignored="false" />
-    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371733729354" ignored="false" />
+    <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371751599588" ignored="false" />
+    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371762489108" ignored="false" />
     <file path="/news.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987452427" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987635170" ignored="false" />
     <file path="/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987551977" ignored="false" />
     <file path="/roomList.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371470359480" ignored="false" />
-    <file path="/room.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371727816396" ignored="false" />
+    <file path="/room.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371750043696" ignored="false" />
     <file path="/messages.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371227729419" ignored="false" />
     <file path="/app.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371642822502" ignored="false" />
-    <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371731348528" ignored="false" />
+    <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371755040046" ignored="false" />
     <file path="/updateCourse.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371076536645" ignored="false" />
     <file path="/newMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724346887" ignored="false" />
-    <file path="/index.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371732285224" ignored="false" />
-    <file path="/detailMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371643166213" ignored="false" />
-    <file path="/schedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371735295881" ignored="false" />
-    <file path="/detailLecture.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371725676983" ignored="false" />
-    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/coreData.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724903600" ignored="false" />
-    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724957901" ignored="false" />
+    <file path="/index.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371745269356" ignored="false" />
+    <file path="/detailMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371746324470" ignored="false" />
+    <file path="/schedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371739206667" ignored="false" />
+    <file path="/detailLecture.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371750626221" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/coreData.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371757410622" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371757410622" ignored="false" />
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/userClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371722843892" ignored="false" />
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/dbConnect.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371204586903" ignored="false" />
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/config.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371593817491" ignored="false" />
@@ -48,21 +49,22 @@
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/parseLSF.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371469580982" ignored="false" />
     <file path="/search.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371590310172" ignored="false" />
     <file path="/detailSchedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371564168225" ignored="false" />
-    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/Course.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371721433593" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/Course.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371757410622" ignored="false" />
     <file path="/Course.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371560263153" ignored="false" />
     <file path="/personList.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371725149086" ignored="false" />
-    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/personParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724848137" ignored="false" />
-    <file path="/person.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371720712363" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/personParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371757410622" ignored="false" />
+    <file path="/person.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371751770999" ignored="false" />
     <file path="/config.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371593805388" ignored="false" />
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/mensa.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371595969559" ignored="false" />
     <file path="/mensa.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371595969189" ignored="false" />
-    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/mensaClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371721433593" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/mensaClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371757410622" ignored="false" />
     <file path="/mensaClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637478127" ignored="false" />
     <file path="/userClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371722838145" ignored="false" />
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/person.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724848137" ignored="false" />
     <file path="/extras.css" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371728004067" ignored="false" />
     <file path="/mensa.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371733169893" ignored="false" />
-    <file path="/quota.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371734391918" ignored="false" />
+    <file path="/quota.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371763744675" ignored="false" />
+    <file path="/updateMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371746951546" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,55 +84,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mensa.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/mensa.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+            <state line="19" column="117" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="153" column="6" selection-start="6116" selection-end="6116" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="32" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+            <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.02972028">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailSchedule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/detailSchedule.html">
+      <file leaf-file-name="personList.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/personList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="18" selection-start="430" selection-end="1840" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="schedule.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/schedule.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="42" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quota.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/quota.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="44" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+            <state line="9" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,28 +120,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="66" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="89" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="92" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.031894933">
+            <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quota.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/quota.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailLecture.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="140" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="126" column="31" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="person.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/person.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -191,22 +193,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/frontend/partials/search.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/detailMessage.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/person.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/newMessage.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/personList.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/detailLecture.html" />
-        <option value="$PROJECT_DIR$/frontend/partials/room.html" />
-        <option value="$PROJECT_DIR$/frontend/css/extras.css" />
-        <option value="$PROJECT_DIR$/frontend/partials/dashboard.html" />
-        <option value="$PROJECT_DIR$/frontend/js/app.js" />
-        <option value="$PROJECT_DIR$/frontend/js/services.js" />
-        <option value="$PROJECT_DIR$/frontend/partials/mensa.html" />
         <option value="$PROJECT_DIR$/frontend/partials/quota.html" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/js/controller.js" />
         <option value="$PROJECT_DIR$/frontend/partials/schedule.html" />
+        <option value="$PROJECT_DIR$/partials/schedule.html" />
+        <option value="$PROJECT_DIR$/partials/detailMessage.html" />
+        <option value="$PROJECT_DIR$/partials/updateMessage.html" />
+        <option value="$PROJECT_DIR$/partials/room.html" />
+        <option value="$PROJECT_DIR$/partials/detailLecture.html" />
+        <option value="$PROJECT_DIR$/js/services.js" />
+        <option value="$PROJECT_DIR$/partials/person.html" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/partials/dashboard.html" />
+        <option value="$PROJECT_DIR$/partials/quota.html" />
       </list>
     </option>
   </component>
@@ -243,6 +245,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,7 +256,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,11 +265,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../htwgbackend/htwgapp" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\htwg\partials" />
       <recent name="C:\xampp\htdocs\htwg\frontend\partials" />
       <recent name="C:\xampp\htdocs\htwg\frontend\img" />
     </key>
@@ -330,13 +333,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16126418" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16288492" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -416,46 +419,52 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/partials/newMessage.html">
+    <entry file="file://$PROJECT_DIR$/partials/person.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="20" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-15.038462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/personList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="30" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-22.884615" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="453" selection-end="453" vertical-scroll-proportion="-5.8846154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/room.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="681" selection-end="681" vertical-scroll-proportion="-12.423077" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/extras.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="11" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="23" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-28.115385" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="66" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+        <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/Config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="89" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
+        <state line="16" column="9" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/newMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="55" selection-start="1124" selection-end="1124" vertical-scroll-proportion="-16.346153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/detailMessage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="70" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-27.461538" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="29" selection-start="742" selection-end="742" vertical-scroll-proportion="-10.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="117" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-18.307692" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="140" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -467,51 +476,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/quota.html">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="44" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+        <state line="19" column="117" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="6" selection-start="6116" selection-end="6116" vertical-scroll-proportion="0.0">
+        <state line="126" column="31" selection-start="4795" selection-end="4795" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/detailSchedule.html">
+    <entry file="file://$PROJECT_DIR$/partials/personList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="18" selection-start="430" selection-end="1840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/mensa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/schedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="42" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="32" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="92" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.031894933">
+        <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/quota.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.02972028">
           <folding />
         </state>
       </provider>
