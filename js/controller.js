@@ -405,15 +405,6 @@ function QuotaCtrl($scope, User, $http) {
 
 }
 
-   /* var nachricht = {
-        titel: "bla",
-        content: "affenkacke",
-        absender: "julian Sudendorf",
-        ID: "25"
-    }
-    Message.messageKey = nachricht;
-*/
-
 
 
 /*

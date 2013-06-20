@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand" />
+    <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand">
+      <change type="DELETED" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\partials\registerCourses.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="$PROJECT_DIR$/js/controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/roomList.html" afterPath="$PROJECT_DIR$/partials/roomList.html" />
+    </list>
     <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371765505707" ignored="false" />
+    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371765723090" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370873184418" ignored="false" />
     <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637361199" ignored="false" />
     <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
@@ -109,7 +114,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0">
+            <state line="63" column="43" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -261,8 +266,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../htwgbackend/htwgapp" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -335,7 +340,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16288492" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16531605" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -441,9 +446,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="742" selection-end="742" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
+        <state line="16" column="29" selection-start="742" selection-end="742" vertical-scroll-proportion="-10.461538" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/room.html">
@@ -495,7 +498,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="0.0">
+        <state line="63" column="43" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
