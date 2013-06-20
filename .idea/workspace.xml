@@ -24,7 +24,7 @@
     <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371755040046" ignored="false" />
     <file path="/updateCourse.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371076536645" ignored="false" />
     <file path="/newMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724346887" ignored="false" />
-    <file path="/index.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371745269356" ignored="false" />
+    <file path="/index.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371765576227" ignored="false" />
     <file path="/detailMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371746324470" ignored="false" />
     <file path="/schedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371739206667" ignored="false" />
     <file path="/detailLecture.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371750626221" ignored="false" />
@@ -74,19 +74,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/app.js">
+      <file leaf-file-name="person.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/person.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="117" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.50236404">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -95,25 +86,16 @@
       <file leaf-file-name="personList.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/personList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="-5.8846154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/messages.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="profileReady.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/profileReady.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="-15.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -122,43 +104,61 @@
       <file leaf-file-name="quota.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/quota.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="-15.192307">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.49019608">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="-14.192307">
+            <state line="3" column="10" selection-start="24" selection-end="26" vertical-scroll-proportion="-2.04">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailLecture.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
+      <file leaf-file-name="room.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="140" selection-start="704" selection-end="704" vertical-scroll-proportion="-8.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/services.js">
+      <file leaf-file-name="roomList.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/roomList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="31" selection-start="4795" selection-end="4795" vertical-scroll-proportion="-14.12">
+            <state line="24" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="-15.692307">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/person.html">
+      <file leaf-file-name="schedule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/schedule.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="-16.346153">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="library.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/library.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="24" selection-start="999" selection-end="999" vertical-scroll-proportion="-12.230769">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="134" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.6639053">
               <folding />
             </state>
           </provider>
@@ -183,11 +183,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/frontend/partials/quota.html" />
-        <option value="$PROJECT_DIR$/frontend/index.html" />
-        <option value="$PROJECT_DIR$/frontend/js/controller.js" />
-        <option value="$PROJECT_DIR$/frontend/partials/schedule.html" />
-        <option value="$PROJECT_DIR$/partials/schedule.html" />
         <option value="$PROJECT_DIR$/partials/detailMessage.html" />
         <option value="$PROJECT_DIR$/partials/updateMessage.html" />
         <option value="$PROJECT_DIR$/partials/room.html" />
@@ -195,10 +190,15 @@
         <option value="$PROJECT_DIR$/js/services.js" />
         <option value="$PROJECT_DIR$/partials/person.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/controller.js" />
         <option value="$PROJECT_DIR$/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/partials/quota.html" />
+        <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/partials/library.html" />
+        <option value="$PROJECT_DIR$/partials/messages.html" />
+        <option value="$PROJECT_DIR$/partials/profileReady.html" />
+        <option value="$PROJECT_DIR$/partials/registerCourses.html" />
+        <option value="$PROJECT_DIR$/partials/roomList.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -365,6 +365,7 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16008538" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
@@ -376,7 +377,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -447,58 +447,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Config.xml">
+    <entry file="file://$PROJECT_DIR$/partials/detailSchedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="9" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/newMessage.html">
+    <entry file="file://$PROJECT_DIR$/partials/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="55" selection-start="1124" selection-end="1124" vertical-scroll-proportion="-16.346153">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/detailMessage.html">
+    <entry file="file://$PROJECT_DIR$/partials/mensa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="70" selection-start="1462" selection-end="1462" vertical-scroll-proportion="-27.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/updateMessage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="1340" selection-end="1340" vertical-scroll-proportion="-9.615385">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/schedule.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="742" selection-end="742" vertical-scroll-proportion="-10.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/room.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="117" selection-start="1171" selection-end="1171" vertical-scroll-proportion="-18.307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="140" selection-start="704" selection-end="704" vertical-scroll-proportion="-8.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/person.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="-16.346153">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -510,51 +475,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
+    <entry file="file://$PROJECT_DIR$/partials/moodle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="117" selection-start="1767" selection-end="1767" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/services.js">
+    <entry file="file://$PROJECT_DIR$/partials/newMessage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="31" selection-start="4795" selection-end="4795" vertical-scroll-proportion="-14.12">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.49019608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/personList.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="412" selection-end="412" vertical-scroll-proportion="-5.8846154">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/partials/profileReady.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="-15.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="-14.192307">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/quota.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="-15.192307">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.49019608">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller.js">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.50236404">
+        <state line="3" column="10" selection-start="24" selection-end="26" vertical-scroll-proportion="-2.04">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/roomList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="937" selection-end="937" vertical-scroll-proportion="-15.692307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/schedule.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/library.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="24" selection-start="999" selection-end="999" vertical-scroll-proportion="-12.230769">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="134" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.6639053">
           <folding />
         </state>
       </provider>

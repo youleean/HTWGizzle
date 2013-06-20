@@ -22,7 +22,7 @@
             </form>
         </li>
 
-        <div class="affenkacke">
+
             <li ng-repeat="room in roomList | filter:query" ng-click="showRoom(room.roomID)" data-icon="key">
                 <strong>Raum: {{room.name}}</strong><br><br>
 
@@ -31,7 +31,7 @@
             <p>{{room.name}}</p>
             <p>{{room.roomID}}</p>
         </div>
-        </div>
+
     </article>
 
     <article id="ordered" class="list indented scroll">
