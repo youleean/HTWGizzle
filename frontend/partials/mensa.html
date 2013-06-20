@@ -9,77 +9,33 @@
             </nav>
         </header>
         <article id="mensaList" class="list indented active scroll">
-            <li class="anchor">
-                <strong>
-                   Heute
-                </strong>
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Stammessen
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 1
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 2
-                </strong><br>
-                Beschreibung
-            </li>
+            <div ng-repeat="(date,day) in mensa">
+                <li class="dark">{{date}}</li>
+                <li class="{{day.stammessen}}" data-icon="food">
+                    <strong>
+                        Stammessen
+                    </strong><br>
+                    {{day.stammessen}}
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Wahlessen 1
+                    </strong><br>
+                    {{day.wahlessen1}}
 
-            <li class="anchor">
-                <strong>
-                   Di. 23.06
-                </strong>
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Stammessen
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 1
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 2
-                </strong><br>
-                Beschreibung
-            </li>
-
-            <li class="anchor">
-                <strong>
-                   Mi. 24.06
-                </strong>
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Stammessen
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 1
-                </strong><br>
-                Beschreibung
-            </li>
-            <li class="" data-icon="food">
-                <strong>
-                   Wahlessen 2
-                </strong><br>
-                Beschreibung
-            </li>
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Wahlessen 2
+                    </strong><br>
+                    {{day.wahlessen2}}
+                </li>
+                <li class="" data-icon="food">
+                    <strong>
+                        Beilagen
+                    </strong><br>
+                    {{day.beilagen}}
+                </li></div>
             
         </article>
         

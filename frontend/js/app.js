@@ -26,8 +26,8 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/schedules/detail/:courseID/:semester', {templateUrl: "partials/detailSchedule.html", controller: "ScheduleCtrl"});
     $routeProvider.when('/lectures/detail/:lectureID', {templateUrl: "partials/detailLecture.html", controller: "LectureCtrl"});
     $routeProvider.when('/search', {templateUrl: "partials/search.html", controller: "SearchCtrl"});
-    /*$routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/mensa', {templateUrl: "partials/mensa.html", controller: "MensaCtrl"});
+    /*$routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
     $routeProvider.when('/library', {templateUrl: "partials/library.html", controller: "LibraryCtrl"});
 
     $routeProvider.when('/moodle', {templateUrl: "partials/moodle.html", controller: "MoodleCtrl"});

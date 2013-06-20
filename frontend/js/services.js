@@ -51,6 +51,20 @@ angular.module('htwgServices', ['ngResource']).
         }, true);
 
         return schedule;
+    }).factory('Mensa', function($rootScope, localStorage) {
+
+        var LOCAL_STORAGE_ID = 'mensa',
+            mu = localStorage[LOCAL_STORAGE_ID];
+
+        var mensa = mu ? JSON.parse(mu) : {
+            schedule: undefined
+        };
+
+        $rootScope.$watch(function() { return mensa; }, function() {
+            localStorage[LOCAL_STORAGE_ID] = JSON.stringify(mensa);
+        }, true);
+
+        return mensa;
     }).factory('CoreData', function($rootScope, localStorage) {
 
         var LOCAL_STORAGE_ID = 'coredata',
@@ -81,7 +95,7 @@ angular.module('htwgServices', ['ngResource']).
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/persons/:personID', {}, {
             queryOne: {method:'GET', isArray:false, cache: true}
         })
-    }).factory('Mensa', function($resource){
+    }).factory('MensaCall', function($resource){
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/mensa/:date', {}, {
             query: {method:'GET', isArray:false, cache: true}
         })
@@ -94,7 +108,7 @@ angular.module('htwgServices', ['ngResource']).
             queryAllRooms: {method:'GET', isArray:false, cache: true},
             queryOneRoom:{method:'GET', isArray:true, cache:true}
         })
-}).factory('Message', function($rootScope, localStorage) {
+    }).factory('Message', function($rootScope, localStorage) {
 
         var LOCAL_STORAGE_ID = 'message',
             messageString = localStorage[LOCAL_STORAGE_ID];
@@ -128,4 +142,13 @@ angular.module('htwgServices', ['ngResource']).
         return $resource('http://uc-projects.in.htwg-konstanz.de/htwgapp/fetchmessage/:nick/:hashedpw/:timestamp', {}, {
             fetchAllMessages: {method:'GET', isArray:false, cache: true}
         })
+    }).factory('Date', function($rootScope, localStorage) {
+
+        var MyDate = new Date();
+        var MyDateString = MyDate.getFullYear() + '-'
+            + ('0' + (MyDate.getMonth()+1)).slice(-2) + '-'
+            + ('0' + MyDate.getDate()).slice(-2);
+
+        return MyDateString;
+        //http://uc-projects.in.htwg-konstanz.de/htwgapp/fetchmessage/jusudend/b444ac06613fc8d63795be9ad0beaf55011936ac/2013-01-01%2012:12:12
     })

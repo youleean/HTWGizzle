@@ -12,35 +12,36 @@
         <article id="main-article" class="hide list indented active scroll">
             <div class="weatherInfo">
                 <li class="dark">Wetter:</li>
-                <li>
-                  <img src="{{weatherInfo.Bild}}" > <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong><br>
+                <li data-image="{{weatherInfo.Bild}}">
+                   <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong>
                 </li>
             </div>
             <li class="dark">Mensa heute:</li>
+
             <li class="" data-icon="food">
                 <strong>
                     Stammessen
                 </strong><br>
-                {{mensa.mensa.stammessen}}
+                {{mensa.stammessen}}
             </li>
             <li class="" data-icon="food">
                 <strong>
                     Wahlessen 1
                 </strong><br>
-                {{mensa.mensa.wahlessen1}}
+                {{mensa.wahlessen1}}
 
             </li>
             <li class="" data-icon="food">
                 <strong>
                     Wahlessen 2
                 </strong><br>
-                {{mensa.mensa.wahlessen2}}
+                {{mensa.wahlessen2}}
             </li>
             <li class="" data-icon="food">
                 <strong>
                     Beilagen
                 </strong><br>
-                {{mensa.mensa.beilagen}}
+                {{mensa.beilagen}}
             </li>
             <li class="dark">News:</li>
             <div class="news">

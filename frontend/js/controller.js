@@ -1,6 +1,6 @@
 'use strict';
 
-function BaseCtrl($scope, $http, $location, User, CoreData) {
+function BaseCtrl($scope, $http, $location, User, CoreData, Mensa, MensaCall, Date) {
    if(CoreData.courses == undefined){
        $http({
            method : 'GET',
@@ -9,9 +9,11 @@ function BaseCtrl($scope, $http, $location, User, CoreData) {
             CoreData.courses = data.courses;
             CoreData.rooms = data.rooms;
             CoreData.persons = data.persons;
-            //CoreData.age =
+            CoreData.departments = data.departments;
            })
    }
+
+   Mensa.food = MensaCall.query({date: Date});
    if(User.userID==undefined){
 		$location.path("/login");
 	}else{
@@ -64,9 +66,13 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 	    }
 }
 
-function DashboardCtrl($scope, Course, Weather, News, Mensa) {
+function DashboardCtrl($scope, Course, Weather, News, Mensa, Schedule, User, Date) {
    //$scope.courses = Course.queryAll();
-    $scope.mensa = Mensa.query({date: "2013-06-19"});
+    if(Schedule.schedule == undefined){
+        Schedule.schedule = Course.querySingle({courseID: User.courseID, semester: User.semester});
+    }
+   //$scope.date = Date;
+   $scope.mensa = Mensa.food.mensa[Date];
    $scope.weatherInfo = Weather.query();
    $scope.news = News.query();
 }
@@ -119,7 +125,7 @@ function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
                     User.semester = data.user.semester;
                     //var test = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
 
-                    Schedule.schedule = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
+
 		    		$location.path("/dashboard");
 		    	
 	  		})
@@ -146,7 +152,8 @@ function ScheduleCtrl($scope, Course, $routeParams, Schedule, $location) {
 
     var KWDatum = new Date();
     var DonnerstagDat = new Date(KWDatum.getTime() + (3-((KWDatum.getDay()+6) % 7)) * 86400000);
-    var KWJahr = DonnerstagDat.getFullYear(); var DonnerstagKW = new Date(new Date(KWJahr,0,4).getTime() + (3-((new Date(KWJahr,0,4).getDay()+6) % 7)) * 86400000);
+    var KWJahr = DonnerstagDat.getFullYear();
+    var DonnerstagKW = new Date(new Date(KWJahr,0,4).getTime() + (3-((new Date(KWJahr,0,4).getDay()+6) % 7)) * 86400000);
     var KW = Math.floor(1.5 + (DonnerstagDat.getTime() - DonnerstagKW.getTime()) / 86400000/7);
 
     $scope.kalenderwoche = KW;
@@ -312,7 +319,7 @@ function SearchCtrl($scope,CoreData, $location) {
 
 function PersonListCtrl($scope, CoreData, $location) {
     $scope.persons = CoreData.persons;
-
+    $scope.departments = CoreData.departments;
     $scope.showPerson = function(personID){
         $location.path("/person/detail/" + personID)
     }
@@ -320,6 +327,12 @@ function PersonListCtrl($scope, CoreData, $location) {
 
 function PersonDetailCtrl($scope, Person, $routeParams) {
     $scope.person = Person.queryOne({personID: $routeParams.id});
+}
+
+function MensaCtrl($scope, Date, Mensa) {
+    $scope.date = Date;
+    console.log(Mensa['food']['mensa'][Date]);
+    $scope.mensa = Mensa.food.mensa;
 }
 
 
@@ -346,9 +359,7 @@ function RoomCtrl($scope, Room) {
     $scope.room = Room.queryOneRoom();
 }
 
-function MensaCtrl($scope) {
-  
-}
+
 
 function LibraryCtrl($scope) {
   

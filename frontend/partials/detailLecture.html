@@ -11,7 +11,7 @@
         <article id="detail" class="list indented active scroll">
 
                     <div class="schedule">
-                        <li><strong>Fach: {{lecture.Schedule.0.name}}</strong><br><br>Dozent: {{lecture.Schedule.0.firstName}} {{lecture.Schedule.0.lastName}}</li>
+                        <li><strong>Fach: {{lecture.Schedule.0.name}}</strong><br><br>Zugewiesene Person: {{lecture.Schedule.0.firstName}} {{lecture.Schedule.0.lastName}}</li>
                     <li class="anchor">Termine</li>
                     <li class="accept" ng-repeat="lectureSingle in lecture.Schedule" ng-show="lectureSingle.interval">
                         <div class="right tag blu">{{lectureSingle.roomName}}</div>
