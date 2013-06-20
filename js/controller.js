@@ -106,7 +106,7 @@ function updateSemesterCtrl($scope, Course, $location, User) {
    }
 }
 
-function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
+function updateProfileCtrl($scope, Course, $location, User, $http, Schedule, Lectures) {
 	$scope.user = User;
 
    $scope.updateProfile = function() {
@@ -132,6 +132,10 @@ function updateProfileCtrl($scope, Course, $location, User, $http, Schedule) {
                     User.semester = data.user.semester;
                     //var test = Course.querySingle({courseID: User.updateCourseID, semester: User.updateSemester});
 
+                    if(data.lectures != null){
+                        Lectures.lectures = data.lectures;
+
+                    }
 
 		    		$location.path("/dashboard");
 		    	

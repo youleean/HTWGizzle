@@ -13,7 +13,7 @@
     <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637361199" ignored="false" />
     <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
     <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371751599588" ignored="false" />
-    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371755749134" ignored="false" />
+    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371762489108" ignored="false" />
     <file path="/news.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987452427" ignored="false" />
     <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987635170" ignored="false" />
     <file path="/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987551977" ignored="false" />
@@ -53,7 +53,7 @@
     <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/person.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724848137" ignored="false" />
     <file path="/extras.css" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371728004067" ignored="false" />
     <file path="/mensa.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371733169893" ignored="false" />
-    <file path="/quota.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371752322655" ignored="false" />
+    <file path="/quota.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371763744675" ignored="false" />
     <file path="/updateMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371746951546" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +86,7 @@
       <file leaf-file-name="controller.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="33" selection-start="1758" selection-end="1758" vertical-scroll-proportion="1.1252955">
+            <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.50236404">
               <folding />
             </state>
           </provider>
@@ -113,7 +113,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="46" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-7.6538463">
+            <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="-15.5">
               <folding />
             </state>
           </provider>
@@ -122,7 +122,7 @@
       <file leaf-file-name="quota.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/quota.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="21" selection-start="856" selection-end="856" vertical-scroll-proportion="-12.576923">
+            <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="-15.192307">
               <folding />
             </state>
           </provider>
@@ -131,7 +131,7 @@
       <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="39" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-11.576923">
+            <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="-14.192307">
               <folding />
             </state>
           </provider>
@@ -194,11 +194,11 @@
         <option value="$PROJECT_DIR$/partials/detailLecture.html" />
         <option value="$PROJECT_DIR$/js/services.js" />
         <option value="$PROJECT_DIR$/partials/person.html" />
-        <option value="$PROJECT_DIR$/partials/quota.html" />
         <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/partials/dashboard.html" />
         <option value="$PROJECT_DIR$/js/controller.js" />
+        <option value="$PROJECT_DIR$/partials/dashboard.html" />
+        <option value="$PROJECT_DIR$/partials/quota.html" />
       </list>
     </option>
   </component>
@@ -250,6 +250,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="htwg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="htwg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,7 +360,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -468,13 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/quota.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="21" selection-start="856" selection-end="856" vertical-scroll-proportion="-12.576923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/person.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="106" selection-start="1202" selection-end="1202" vertical-scroll-proportion="-16.346153">
@@ -496,23 +517,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="46" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-7.6538463">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="126" column="31" selection-start="4795" selection-end="4795" vertical-scroll-proportion="-14.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="39" selection-start="1593" selection-end="1593" vertical-scroll-proportion="-11.576923">
           <folding />
         </state>
       </provider>
@@ -524,9 +531,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="43" selection-start="4028" selection-end="4028" vertical-scroll-proportion="-15.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="89" selection-start="2224" selection-end="2224" vertical-scroll-proportion="-14.192307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/quota.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="38" selection-start="972" selection-end="972" vertical-scroll-proportion="-15.192307">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="33" selection-start="1758" selection-end="1758" vertical-scroll-proportion="1.1252955">
+        <state line="25" column="41" selection-start="817" selection-end="817" vertical-scroll-proportion="0.50236404">
           <folding />
         </state>
       </provider>
