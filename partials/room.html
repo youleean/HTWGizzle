@@ -13,11 +13,11 @@
         <li class="dark">Information</li>
         <li>
             <strong>
-                Raumname
-            </strong><br>Gebäude: [GEBÄUDE]<br>Stockwerk: [Stockwerk]<br>
+                {{room.room.0.name}}
+            </strong><br>Gebäude: {{room.room.0.building}}<br>Stockwerk: {{room.room.0.floor}}<br>
 
         </li>
-        <img class="floorImg" src="img/floorplans/a_0.png">
+        <img class="floorImg" src="img/floorplans/{{room.room.0.img}}">
         <li class="dark">Belegungsplan</li>
         <li>
             <form>
@@ -26,10 +26,10 @@
                 </fieldset>
             </form>
         </li>
-        <li class="accept" ng-repeat="day in schedule | filter:query">
+        <li class="accept" ng-repeat="day in room.room.0.schedule | filter:query" ng-click="showLecture(day.lectureId)">
             <strong>
-                {{day.summary}}
-            </strong><br>{{day.wochentag}}<br>{{day.beginn}} Uhr bis {{day.ende}} Uhr
+                {{day.name}}
+            </strong><br>{{day.day}}<br>{{day.startTime}} Uhr bis {{day.endTime}} Uhr
         </li>
         </div>
     </article>

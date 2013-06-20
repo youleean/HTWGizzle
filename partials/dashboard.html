@@ -50,12 +50,29 @@
                 <p>{{newsEntry.content}}</p>
             </li>
             <li class="dark">Heute:</li>
-                <li class="accept">
-                    <div class="right tag blu">Raum</div>
-                    <strong>
-                       Abgabe Regelungstechnik
-                    </strong><br>14:00 Uhr
-                </li>
+                <div ng-repeat="message in messages">
+                    <div ng-switch on="message.datum">
+
+                        <div ng-switch-when="$parent.myDate">
+
+                            <div ng-switch on="message.type">
+                                <li class="cancel" ng-switch-when="Klausur"  ng-click="showMessage(message.msgID)">
+                                    <strong>{{message.name}}</strong><br>
+                                    {{message.type}}
+                                </li>
+                                <li class="accept" ng-switch-when="Schein" ng-click="showMessage(message.msgID)">
+                                    <strong>{{message.name}}</strong><br>
+                                    {{message.type}}
+                                </li>
+                                <li class="cancel" ng-switch-when="Tutorium" ng-click="showMessage(message.msgID)">
+                                <strong>{{message.name}}</strong><br>
+                                    {{message.type}}
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             <li class="dark">Diese Woche:</li>
                 <li class="accept">
                     <div class="right tag blu">Raum</div>

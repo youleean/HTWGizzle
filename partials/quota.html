@@ -27,11 +27,11 @@
         </li>
         <li class="" data-icon="desktop">
             <strong>
-                {{data.zDrive.value}}
+                {{data.zDrive.free}}
             </strong><br>
-            Speicherplatz belegt auf Z-Laufwerk
+            Speicherplatz frei auf Z-Laufwerk
         </li>
-        <form class="" data-progress="74%">
+        <form class="" data-progress="{{data.zDrive.percent}}%">
         </form>
         <li class="anchor">
             <strong>
@@ -40,9 +40,9 @@
         </li>
         <li class="" data-icon="envelope-alt">
             <strong>
-                {{data.printer.value}}
+                {{data.mail.usedSpaceFree}}MB
             </strong><br>
-            Speicherplatz belegt von Mailkonto
+            Speicherplatz frei von Mailkonto
         </li>
         <form class="" data-progress="{{data.mail.usedSpace.value}}%">
         </form>

@@ -22,7 +22,7 @@
                             {{displayDay(daynum)}}
                         </strong>
                     </li>
-                    <li class="accept"  ng-repeat="course in day">
+                    <li class="accept"  ng-repeat="course in day" ng-click=showLecture(course.lectureID)>
                         <div class="right tag blu">{{course.roomName}}</div>
                         <strong>
                             {{course.name}}

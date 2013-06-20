@@ -23,8 +23,8 @@
         <li>
             Büro: {{person.person.0.office}}<br><br>
             Website: <a href="{{person.person.0.hyperlink}}">{{person.person.0.hyperlink}}</a><br><br>
-            Telefon: {{person.person.0.contactPhone}}<br><br><button class="button anchor">Anrufen</button><br><br>
-            E-Mail: {{person.person.0.contactMail}}<br><br><button class="button anchor">E-mail</button>
+            Telefon: {{person.person.0.contactPhone}}<br><br><a href="tel:{{person.person.0.contactPhone}}" class="button anchor">Anrufen</a><br><br>
+            E-Mail: {{person.person.0.contactMail}}<br><br><a href="mailto:{{person.person.0.contactMail}}" class="button anchor">E-mail</a>
         </li>
         <li class="dark">Vorlesungen</li>
         <li class="accept" ng-repeat="course in person.person.lectures">
