@@ -10,6 +10,13 @@
     </header>
 
     <article id="detail" class="list indented active scroll">
+        <li class="dark">Information</li>
+        <li>
+            <strong>
+                Raumname
+            </strong><br>Gebäude: [GEBÄUDE]<br>Stockwerk: [Stockwerk]
+        </li>
+        <li class="dark">Belegungsplan</li>
         <li>
             <form>
                 <fieldset data-icon="search">
@@ -17,12 +24,11 @@
                 </fieldset>
             </form>
         </li>
-            <li ng-repeat="day in schedule" >
-                {{day.wochentag}}<br>
-                {{day.beginn}}<br>
-                {{day.ende}}<br>
-                {{day.raum}}<br>
-            </li>
+        <li class="accept" ng-repeat="day in schedule | filter:query">
+            <strong>
+                {{day.summary}}
+            </strong><br>{{day.wochentag}}<br>{{day.beginn}} Uhr bis {{day.ende}} Uhr
+        </li>
         </div>
     </article>
 

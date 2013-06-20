@@ -13,19 +13,19 @@
         <div class="margined form">
             <fieldset>
                 <label>Fach:</label>
-                MMI
+                {{message.lectureID}}
             </fieldset>
             <fieldset>
                 <label>Art:</label>
-                Abgabe
+                {{message.Type}}
             </fieldset>
             <fieldset data-icon="user">
                 <label>Absender:</label>
-                Julian Sudendorf
+                {{message.publisher}}
             </fieldset>
             <fieldset data-icon="calendar">
                 <label>Datum:</label>
-                26.06.2013
+                {{message.eventDate}}
             </fieldset>
             <fieldset data-icon="time">
                 <label>Zeit:</label>
@@ -34,8 +34,10 @@
             <fieldset>
                 <label>Nachricht:</label>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac gravida nibh, id egestas lorem. Aliquam erat volutpat. Aenean interdum tellus enim, mollis egestas lorem varius pharetra. Nam mattis auctor lacus, congue pharetra sapien. Pellentesque pharetra velit odio, ac congue felis auctor a. Etiam convallis urna interdum hendrerit sagittis. Suspendisse congue massa enim, ac ullamcorper nulla cursus a. Praesent quis enim cursus, adipiscing tortor et, consequat purus.</p><br><br>
-            </fieldset>
+<p>{{message.content}}</p>            </fieldset>
+
+            {{message}}
+
 
         </div>
         <div class="one row">

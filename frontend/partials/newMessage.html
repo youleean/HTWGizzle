@@ -10,22 +10,22 @@
     </header>
 
     <article id="new"  class="list active scroll">
+        {{success}}
         <div class="form margined">
             <fieldset data-icon="plus">
                 <label>Für:</label>
-                <select class="custom">
-                    <option value="1">MMI</option>
-                    <option value="2">RTOS</option>
-                    <option value="3">EMV</option>
+                <select class="custom" ng-model="input.lectureID">
+                    <option ng-repeat="lecture in lectures" value="{{lecture.lectureID}}">{{lecture.name}}</option>
                 </select>
             </fieldset>
             <fieldset>
                 <label>Art:</label>
-                <select class="custom">
-                    <option value="1">Abgabe</option>
-                    <option value="2">Schein</option>
-                    <option value="3">Klausur</option>
-                    <option value="4">Terminänderung</option>
+                <select class="custom" ng-model="input.art">
+                    <option value="1">Schein</option>
+                    <option value="2">Klausur</option>
+                    <option value="3">Tutorium</option>
+                    <option value="4">Vorlesung</option>
+                    <option value="5">Labor</option>
                 </select>
             </fieldset>
             <!--<fieldset>
@@ -33,26 +33,23 @@
                 <br>
                 <input type="range" min="0" max="1" class="checkbox active" value="1">
             </fieldset>-->
-            <fieldset data-icon="pencil">
-                <label>Titel:</label>
-                <input type="text">
-            </fieldset>
+
             <fieldset data-icon="date">
                 <label>Datum:</label>
-                <input type="date">
+                <input type="date" ng-model="input.date">
             </fieldset>
             <fieldset data-icon="date">
                 <label>Zeit:</label>
-                <input type="time">
+                <input type="time" ng-model="input.time">
             </fieldset>
             <fieldset>
                 <label>Nachricht:</label>
                 <br>
-                <textarea rows="200"></textarea>
+                <textarea rows="200" ng-model="input.content"></textarea>
             </fieldset>
         </div>
         <div class="one row">
-            <div class="five columns"><div class="margined"><button class="button anchor accept" data-label="Abschicken"></button></div></div>
+            <div class="five columns"><div class="margined"><button class="button anchor accept" ng-click="sendMessage()" data-label="Abschicken"></button></div></div>
             <div class="five columns"><div class="margined"><button class="button anchor cancel" data-label="Verwerfen"></button></div></div>
         </div>
 

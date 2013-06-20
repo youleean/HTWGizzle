@@ -1,5 +1,5 @@
 <section id="rooms" data-transition="slide" class="active">
-    <header data-title="Räume">
+    <header data-title="Räume" class="extended">
         <nav class="left">
             <a lab-aside="menu" data-icon="menu"></a>
         </nav>
@@ -8,8 +8,12 @@
             <a lab-aside="msgs" data-icon="comments" ></a>
         </nav>
     </header>
+    <nav class="groupbar">
+        <a href="#/rooms/alphabetical" data-router="article" class="active" data-label="Alphabetisch"></a>
+        <a href="#/rooms/ordered" data-router="article" data-label="Fakultäten" ></a>
+    </nav>
 
-    <article id="main-article" class="list indented active scroll">
+    <article id="alphabetical" class="list indented active scroll">
         <li>
             <form>
                 <fieldset data-icon="search">
@@ -19,8 +23,8 @@
         </li>
 
         <div class="affenkacke">
-            <li ng-repeat="room in roomList.rooms | filter:query" ng-click="showRoom(room.roomID)" data-icon="plus-sign">
-                <strong>{{room.name}}</strong><br>
+            <li ng-repeat="room in roomList | filter:query" ng-click="showRoom(room.roomID)" data-icon="key">
+                <strong>Raum: {{room.name}}</strong><br><br>
 
             </li>
         <div class="room">
@@ -28,6 +32,14 @@
             <p>{{room.roomID}}</p>
         </div>
         </div>
+    </article>
+
+    <article id="ordered" class="list indented scroll">
+        <li>
+           TESTESTESTEST
+        </li>
+
+
     </article>
 
 

@@ -11,24 +11,27 @@ htwgApp.config(['$routeProvider', '$locationProvider', function($routeProvider, 
     $routeProvider.when('/updateSemester', {templateUrl: "partials/updateSemester.html", controller: "updateSemesterCtrl"});
     $routeProvider.when('/updateProfile', {templateUrl: "partials/updateProfile.html", controller: "updateProfileCtrl"});
     $routeProvider.when('/rooms', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
+    $routeProvider.when('/rooms/alphabetical', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
+    $routeProvider.when('/rooms/ordered', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
     $routeProvider.when('/room/detail/:id', {templateUrl: "partials/room.html", controller: "RoomDetailCtrl"});
+    $routeProvider.when('/persons', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
+    $routeProvider.when('/persons/alphabetical', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
+    $routeProvider.when('/persons/ordered', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
+    $routeProvider.when('/person/detail/:id', {templateUrl: "partials/person.html", controller: "PersonDetailCtrl"});
     $routeProvider.when('/messages/fetch', {templateUrl: "partials/messages.html", controller: "MessageCtrl"});
-    $routeProvider.when('/message/new', {templateUrl: "partials/newMessage.html"});
+    $routeProvider.when('/message/new', {templateUrl: "partials/newMessage.html", controller: "NewMessageCtrl"});
     $routeProvider.when('/message/edit', {templateUrl: "partials/newMessage.html"});
-    $routeProvider.when('/messages/detail/:id', {templateUrl: "partials/detailMessage.html"});
+    $routeProvider.when('/messages/detail/:id', {templateUrl: "partials/detailMessage.html", controller: "MessageDetailCtrl"});
     $routeProvider.when('/schedule', {templateUrl: "partials/schedule.html", controller: "ScheduleCtrl"});
     $routeProvider.when('/schedules/detail/:courseID/:semester', {templateUrl: "partials/detailSchedule.html", controller: "ScheduleCtrl"});
     $routeProvider.when('/lectures/detail/:lectureID', {templateUrl: "partials/detailLecture.html", controller: "LectureCtrl"});
+    $routeProvider.when('/search', {templateUrl: "partials/search.html", controller: "SearchCtrl"});
     /*$routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
-    $routeProvider.when('/courses', {templateUrl: "partials/courses.html", controller: "CoursesCtrl"});
-    $routeProvider.when('/news', {templateUrl: "partials/news.html", controller: "NewsCtrl"});
-    $routeProvider.when('/schedule', {templateUrl: "partials/schedule.html", controller: "ScheduleCtrl"});
-    $routeProvider.when('/rooms', {templateUrl: "partials/roomList.html", controller: "RoomListCtrl"});
     $routeProvider.when('/mensa', {templateUrl: "partials/mensa.html", controller: "MensaCtrl"});
     $routeProvider.when('/library', {templateUrl: "partials/library.html", controller: "LibraryCtrl"});
-    $routeProvider.when('/persons', {templateUrl: "partials/personList.html", controller: "PersonListCtrl"});
+
     $routeProvider.when('/moodle', {templateUrl: "partials/moodle.html", controller: "MoodleCtrl"});
-    $routeProvider.when('/search', {templateUrl: "partials/search.html", controller: "SearchCtrl"});
+
     $routeProvider.when('/settings', {templateUrl: "partials/setings.html", controller: "SettingsCtrl"});*/
     $routeProvider.otherwise({redirectTo: '/boot', templateUrl: "partials/boot.html", controller: "BaseCtrl"});
     $locationProvider.html5Mode(false);

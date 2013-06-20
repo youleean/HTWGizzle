@@ -27,18 +27,18 @@
         
         <aside id="menu">
             <article class="active list">
-                <header data-title="Menü"></header>
+                <header data-title="Men&uuml;"></header>
                 <ul>
                     <li class="current"><a href="#dashboard" data-router="article" data-icon="home"><strong> Dashboard</strong></a></li>
                     <li><a href="#schedule" data-router="section" data-icon="time"><strong> Stundenplan</strong></a></li>
-                    <li><a href="#termine" data-router="article" data-icon="calendar"><strong> Termine</strong></a></li>
-                    <li><a href="#gebaude" data-router="section" data-icon="key"><strong> Gebäude</strong></a></li>
-                    <li><a href="#mensa" data-router="section" data-icon="food"><strong> Mensa</strong></a></li>
-                    <li><a href="#bibliothek" data-router="section" data-icon="book"><strong> Bibliothek</strong></a></li>
+                    <!--<li><a href="#termine" data-router="article" data-icon="calendar"><strong> Termine</strong></a></li>-->
+                    <li><a href="#rooms" data-router="section" data-icon="key"><strong> Geb&auml;ude</strong></a></li>
+                    <!--<li><a href="#mensa" data-router="section" data-icon="food"><strong> Mensa</strong></a></li>
+                    <li><a href="#bibliothek" data-router="section" data-icon="book"><strong> Bibliothek</strong></a></li>-->
                     <li><a href="#guthaben" data-router="section" data-icon="credit-card"><strong> Guthaben</strong></a></li>
-                    <li><a href="#personen" data-router="section" data-icon="group"><strong> Personen</strong></a></li>
+                    <li><a href="#persons" data-router="section" data-icon="group"><strong> Personen</strong></a></li>
                     <li><a href="#moodle" data-router="section" data-icon="briefcase"><strong> Moodle</strong></a></li>
-                    <li><a href="#suche" data-router="section" data-icon="search"><strong> Suche</strong></a></li>
+                    <li><a href="#search" data-router="section" data-icon="search"><strong> Suche</strong></a></li>
                     <li><a href="#einstellungen" data-router="article" data-icon="cog"><strong> Einstellungen</strong></a></li>
                 </ul>
             </article>
@@ -47,11 +47,11 @@
         <aside id="msgs" class="right" ng-controller="MessageCtrl">
             <header data-title="Nachrichten"></header>
             <article class="active list indented scroll">
-                <a href="#test" data-router="section" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></a><br><br>
+                <button ng-click="newMsg()" class="button anchor" data-label="Neue Nachricht" data-icon="plus-sign"></button><br><br>
                 <ul>
 
-                        <div class="showKlausur">
-                            <li class="cancel" ng-repeat="message in showKlausur | filter: Klausur" data-icon="plus-sign">
+                        <div class="showKlausur" >
+                            <li class="cancel" ng-repeat="message in showKlausur | filter: Klausur" data-icon="plus-sign" ng-click="showMessage(1)">
                                 <strong>{{message.content}}</strong><br>
                                 {{message.type}}
                             </li>

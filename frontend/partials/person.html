@@ -1,0 +1,44 @@
+<section id="person" data-transition="slide" class="active" ng-controller="PersonDetailCtrl">
+    <header data-title="{{person.person.0.degree}} {{person.person.0.firstName}} {{person.person.0.lastName}}">
+        <nav class="left">
+            <a lab-aside="menu" data-icon="menu"></a>
+        </nav>
+        <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
+        <nav class="right">
+            <a lab-aside="msgs" data-icon="comments" ></a>
+        </nav>
+    </header>
+
+    <article id="detail" class="list indented active scroll">
+        <li class="dark">Information</li>
+        <li> [IMAGE]<br><br>
+            <strong>
+                Vorname: {{person.person.0.firstName}}<br><br>
+                Nachname: {{person.person.0.lastName}}<br><br>
+                Rolle: {{person.person.0.personalState}}
+
+            </strong><br>
+        </li>
+        <li class="dark">Kontaktdaten</li>
+        <li>
+            Büro: {{person.person.0.office}}<br><br>
+            Website: <a href="{{person.person.0.hyperlink}}">{{person.person.0.hyperlink}}</a><br><br>
+            Telefon: {{person.person.0.contactPhone}}<br><br><button class="button anchor">Anrufen</button><br><br>
+            E-Mail: {{person.person.0.contactMail}}<br><br><button class="button anchor">E-mail</button>
+        </li>
+        <li class="dark">Vorlesungen</li>
+        <li class="accept" ng-repeat="course in person.person.lectures">
+            <br>
+            <strong>
+                {{course.name}}
+            </strong><br><br>
+
+
+        </li>
+
+
+
+    </article>
+
+
+</section>

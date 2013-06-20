@@ -1,27 +1,30 @@
 <section id="lectures" data-transition="slide" ng-controller="LectureCtrl">
         <header data-title="{{Lecture.name}}">
             <nav class="left">
-                <a href="#features" data-router="aside" data-icon="menu"></a>
+                <a lab-aside="menu" data-icon="menu"></a>
             </nav>
             <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
             <nav class="right">
-                <a href="#msgs" data-router="aside" data-icon="comments" ></a>
+                <a lab-aside="msgs" data-icon="comments" ></a>
             </nav>
         </header>
         <article id="detail" class="list indented active scroll">
 
                     <div class="schedule">
-                         <div ng-repeat="lectureSingle in Lecture.termine">
-                         <li class="anchor">
-                        <strong>
-                           {{lectureSingle}}
-                        </strong>
+                        <li><strong>Fach: {{lecture.Schedule.0.name}}</strong><br><br>Dozent: {{lecture.Schedule.0.firstName}} {{lecture.Schedule.0.lastName}}</li>
+                    <li class="anchor">Termine</li>
+                    <li class="accept" ng-repeat="lectureSingle in lecture.Schedule" ng-show="lectureSingle.interval">
+                        <div class="right tag blu">{{lectureSingle.roomName}}</div>
+                        <strong>{{lectureSingle.day}}</strong><br><br>
+                        {{lectureSingle.startTime}} Uhr - {{lectureSingle.endTime}} Uhr
                     </li>
-                    <li class="accept">
-                        asdasds
-                    </li>
-                </div>
-                  </div>
+                    <li class="anchor">Einzelveranstaltungen</li>
+                        <li class="accept" ng-repeat="lectureSingle in lecture.Schedule" ng-hide="lectureSingle.interval">
+                            <div class="right tag blu">{{lectureSingle.roomName}}</div>
+                            <strong>{{lectureSingle.day}} - {{lectureSingle.date}}</strong><br><br>
+                            {{lectureSingle.startTime}} Uhr - {{lectureSingle.endTime}} Uhr
+                        </li>
+                    </div>
                    
         </article>
         

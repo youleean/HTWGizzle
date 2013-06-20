@@ -1,11 +1,11 @@
-<section id="suche" data-transition="slide">
+<section id="search" data-transition="slide">
         <header data-title="Suche">
             <nav class="left">
-                <a href="#features" data-router="aside" data-icon="menu"></a>
+                <a lab-aside="menu" data-icon="menu"></a>
             </nav>
             <!--<img src="http://cdn.tapquo.com/lungo/logo.png" class="title centered">-->
             <nav class="right">
-                <a href="#msgs" data-router="aside" data-icon="comments" ></a>
+                <a lab-aside="msgs" data-icon="comments" ></a>
             </nav>
         </header>
         <article id="searchViews" class="indented list scroll active" data-transition="slide">
@@ -13,37 +13,33 @@
                 <li>
                     <form>
                         <fieldset data-icon="search"><span class="icon search"></span>
-                            <input type="search" placeholder="Durchsuchen...">
-                            <label class="select">
+                            <input type="search" placeholder="Durchsuchen..." ng-model="query">
+                          <!--  <label class="select">
                                 <select class="custom">
                                     <option value="1">Filter</option>
                                     <option value="2">Personen</option>
                                     <option value="3">Räume</option>
                                 </select>
-                            </label>
+                            </label>-->
                         </fieldset>
                     </form>
                 </li>
-               <li  data-icon="user">
-                    <strong>Person Aa</strong><br>
-                    Beschreibung
+                    <li class="dark">Räume</li>
+                    <li ng-repeat="room in rooms | filter:query" ng-click="showRoom(room.roomID)" data-icon="key">
+                        <strong>Raum: {{room.name}}</strong><br><br>
+
+                    </li>
+                    <li class="dark">Studiengänge</li>
+                    <li ng-repeat="course in courses | filter:query" ng-click="selectCourse(course.courseID, course.fullName)" class="selectable" data-icon="book">
+                        <strong>{{course.shortName}}</strong><br>
+                        {{course.fullName}}
+                    </li>
+                    <li class="dark">Personen</li>
+               <li ng-repeat="person in persons | filter:query"  data-icon="user" >
+                    <strong>{{person.firstName}} {{person.lastName}}</strong><br>
+                    {{person.personalState}}
                 </li>
-                <li  data-icon="user">
-                    <strong>Person Ab</strong><br>
-                    Beschreibung
-                </li>
-                <li  data-icon="key">
-                    <strong>AULA</strong><br>
-                    A Gebäude
-                </li>
-                <li  data-icon="key">
-                    <strong>Raum A222</strong><br>
-                    A Gebäude
-                </li>
-                <li  data-icon="key">
-                    <strong>Raum A222</strong><br>
-                    A Gebäude
-                </li>
+
                
             </ul>
             </article>

@@ -11,17 +11,42 @@
 
         <article id="main-article" class="hide list indented active scroll">
             <div class="weatherInfo">
+                <li class="dark">Wetter:</li>
                 <li>
-                    <strong>Wetter:</strong><br><br>
                   <img src="{{weatherInfo.Bild}}" > <strong>Temperatur:  {{weatherInfo.Temperatur}}°C</strong><br>
                 </li>
             </div>
+            <li class="dark">Mensa heute:</li>
+            <li class="" data-icon="food">
+                <strong>
+                    Stammessen
+                </strong><br>
+                {{mensa.mensa.stammessen}}
+            </li>
+            <li class="" data-icon="food">
+                <strong>
+                    Wahlessen 1
+                </strong><br>
+                {{mensa.mensa.wahlessen1}}
+
+            </li>
+            <li class="" data-icon="food">
+                <strong>
+                    Wahlessen 2
+                </strong><br>
+                {{mensa.mensa.wahlessen2}}
+            </li>
+            <li class="" data-icon="food">
+                <strong>
+                    Beilagen
+                </strong><br>
+                {{mensa.mensa.beilagen}}
+            </li>
             <li class="dark">News:</li>
             <div class="news">
             <li ng-repeat="newsEntry in news.news" data-image="{{newsEntry.image}}" >
                 <strong><i>{{newsEntry.date}}</i> - {{newsEntry.titel}}</strong><br>
                 <p>{{newsEntry.content}}</p>
-                <p>{{newsEntry.link}}</p>
             </li>
             <li class="dark">Heute:</li>
                 <li class="accept">
