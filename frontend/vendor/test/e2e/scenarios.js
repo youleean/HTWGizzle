@@ -2,8 +2,8 @@
 
 describe('Angular Lungo Bridge Simple App E2E Tests', function() {
 
-	it('Should redirect index.html to index.html', function() {
-		browser().navigateTo('../../examples/simple/index.html');
+	it('Should redirect start_index.html to start_index.html', function() {
+		browser().navigateTo('../../examples/simple/start_index.html');
 		expect(browser().location().url()).toBe('/');
 	});
 
@@ -11,7 +11,7 @@ describe('Angular Lungo Bridge Simple App E2E Tests', function() {
 	describe('Testing routing through angular', function() {
 
 		beforeEach(function() {
-			browser().navigateTo('../../examples/simple/index.html');
+			browser().navigateTo('../../examples/simple/start_index.html');
 		});
 
 		it('Should find the lab-view through the browser', function() {
@@ -45,7 +45,7 @@ describe('Angular Lungo Bridge Simple App E2E Tests', function() {
     
     describe('Testing rendering of data-* attributes of directives', function() {
         beforeEach(function() {
-            browser().navigateTo('../../examples/simple/index.html');
+            browser().navigateTo('../../examples/simple/start_index.html');
         });
         
         it('should have a directive-and-lungo-test element present', function() {

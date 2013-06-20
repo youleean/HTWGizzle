@@ -3786,7 +3786,7 @@ module.exports = {
    *      openExternal: boolean              => open in a new browser (default=false)
    *
    * Example:
-   *      navigator.app.loadUrl("http://server/myapp/index.html", {wait:2000, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000});
+   *      navigator.app.loadUrl("http://server/myapp/start_index.html", {wait:2000, loadingDialog:"Wait,Loading App", loadUrlTimeoutValue: 60000});
    */
   loadUrl:function(url, props) {
     exec(null, null, "App", "loadUrl", [url, props]);

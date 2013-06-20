@@ -64,7 +64,7 @@ docsApp.directive.sourceEdit = function(getEmbeddedTemplate) {
   function read(text) {
     var files = [];
     angular.forEach(text ? text.split(' ') : [], function(refId) {
-      // refId is index.html-343, so we need to strip the unique ID when exporting the name
+      // refId is start_index.html-343, so we need to strip the unique ID when exporting the name
       files.push({name: refId.replace(/-\d+$/, ''), content: getEmbeddedTemplate(refId)});
     });
     return files;
@@ -184,12 +184,12 @@ docsApp.serviceFactory.openPlunkr = function(templateMerge, formPostData, angula
     };
     var postData = {};
     angular.forEach(allFiles, function(file, index) {
-      if (file.content && file.name != 'index.html') {
+      if (file.content && file.name != 'start_index.html') {
         postData['files[' + file.name + ']'] = file.content;
       }
     });
 
-    postData['files[index.html]'] = templateMerge(indexHtmlContent, indexProp);
+    postData['files[start_index.html]'] = templateMerge(indexHtmlContent, indexProp);
     postData['tags[]'] = "angularjs";
     
     postData.private = true;

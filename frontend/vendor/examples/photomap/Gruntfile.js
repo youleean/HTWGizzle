@@ -15,7 +15,7 @@ module.exports = function(grunt) {
     zip: {
       app: {
         file: {
-          src: ["index.html", "Config.xml", "components/**/*.*", "partials/*.html", "app.js", "controller.js"],
+          src: ["start_index.html", "Config.xml", "components/**/*.*", "partials/*.html", "app.js", "controller.js"],
           dest: "app.zip"
         }
      }     

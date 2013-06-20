@@ -3,7 +3,7 @@
 describe('Inter-section links', function() {
 
 	beforeEach(function() {
-		browser().navigateTo('../../examples/simple/index.html'); 
+		browser().navigateTo('../../examples/simple/start_index.html');
 		element('a[href="navbarissue"]').click();
 	});
 

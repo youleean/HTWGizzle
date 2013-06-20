@@ -6,7 +6,7 @@ angular.module('BridgeExample',
 	['Centralway.lungo-angular-bridge'
 	, 'BridgeExample.filters', 'BridgeExample.services', 'BridgeExample.directives', 'BridgeExample.controllers']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-    // First section is embedded in index.html, so no parameters
+    // First section is embedded in start_index.html, so no parameters
     $routeProvider.when('/section1', {});
     // Dynamic section is loaded via lab-view
     $routeProvider.when('/dynamic', { templateUrl: 'examples/simple/partials/dynamic.html', controller: 'DynamicCtrl'});

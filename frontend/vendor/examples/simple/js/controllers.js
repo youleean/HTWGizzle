@@ -10,7 +10,7 @@ function AppCtrl($scope) {
 	  * A short cut to manually refresh the application from the example/ directory
 	  */
     $scope.refreshApplication = function() {
-    	window.location = '/examples/simple/index.html';
+    	window.location = '/examples/simple/start_index.html';
     }
     console.log('AppCtrl::AppCtrl() - Instantiated');
     
