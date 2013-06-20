@@ -32,6 +32,7 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 		$scope.error = {};
 
 	    $scope.submitLogin = function() {
+            var pw = $scope.user.pw;
 	        $http({
 	            method : 'POST',
 	            url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/user',
@@ -50,6 +51,7 @@ function LoginCtrl($scope, $http, $location, User, Lectures){
 				    User.fullName = data.user.fullName;
 				    User.hashPw = data.user.hashPw;
 				    User.semester = data.user.semester;
+                    User.pw = pw;
 
 		    	}
                     if(data.lectures != null){
@@ -335,6 +337,25 @@ function MensaCtrl($scope, Date, Mensa) {
     $scope.mensa = Mensa.food.mensa;
 }
 
+
+function QuotaCtrl($scope, User, $http) {
+    var POSTdata = {
+        user: User.nick,
+        pw: User.pw
+    }
+
+
+
+    $http({
+        method : 'POST',
+        url : 'http://uc-projects.in.htwg-konstanz.de/htwgapp/quota',
+        data : JSON.stringify(POSTdata)
+    }).success(function(data, status, headers, config) {
+           console.log(data);
+            $scope.data = data;
+        })
+
+}
 
    /* var nachricht = {
         titel: "bla",

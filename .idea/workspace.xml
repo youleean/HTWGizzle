@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc7a316e-455d-489e-98a1-dcb15d638032" name="Default" comment="" />
-    <ignored path="frontend.iws" />
+    <list default="true" id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="aktueller stand">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/test/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/quota.html" />
+      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\photomap\Gruntfile.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\photomap\Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
+      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\app.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controller.js" afterPath="$PROJECT_DIR$/js/controller.js" />
+      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\controllers.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\examples\simple\js\controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/mensa.html" afterPath="$PROJECT_DIR$/partials/mensa.html" />
+      <change type="MODIFICATION" beforePath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\test\e2e\scenarios.js" afterPath="C:\xampp\xampplite\htdocs\htwgizzle\github\HTWGizzle\vendor\test\e2e\scenarios.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <ignored path="HTWGizzle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/dashboard.html" changelist="fc7a316e-455d-489e-98a1-dcb15d638032" time="1370272483960" ignored="false" />
+    <file path="/Dummy.txt" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371739160728" ignored="false" />
+    <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370873184418" ignored="false" />
+    <file path="/a.dummy" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637361199" ignored="false" />
+    <file path="/courses.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370984292705" ignored="false" />
+    <file path="/services.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371730417249" ignored="false" />
+    <file path="/controller.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371733729354" ignored="false" />
+    <file path="/news.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987452427" ignored="false" />
+    <file path="$PROJECT_DIR$/../../htwgserver/app/htwgapp/webapp/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987635170" ignored="false" />
+    <file path="/newsParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1370987551977" ignored="false" />
+    <file path="/roomList.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371470359480" ignored="false" />
+    <file path="/room.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371727816396" ignored="false" />
+    <file path="/messages.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371227729419" ignored="false" />
+    <file path="/app.js" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371642822502" ignored="false" />
+    <file path="/dashboard.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371731348528" ignored="false" />
+    <file path="/updateCourse.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371076536645" ignored="false" />
+    <file path="/newMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724346887" ignored="false" />
+    <file path="/index.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371732285224" ignored="false" />
+    <file path="/detailMessage.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371643166213" ignored="false" />
+    <file path="/schedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371735295881" ignored="false" />
+    <file path="/detailLecture.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371725676983" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/coreData.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724903600" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724957901" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/userClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371722843892" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/dbConnect.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371204586903" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/config.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371593817491" ignored="false" />
+    <file path="/index.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724923761" ignored="false" />
+    <file path="/coreData.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371291181608" ignored="false" />
+    <file path="/updateProfile.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371292122004" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/parseLSF.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371469580982" ignored="false" />
+    <file path="/search.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371590310172" ignored="false" />
+    <file path="/detailSchedule.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371564168225" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/Course.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371721433593" ignored="false" />
+    <file path="/Course.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371560263153" ignored="false" />
+    <file path="/personList.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371725149086" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/personParser.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724848137" ignored="false" />
+    <file path="/person.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371720712363" ignored="false" />
+    <file path="/config.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371593805388" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/mensa.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371595969559" ignored="false" />
+    <file path="/mensa.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371595969189" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/mensaClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371721433593" ignored="false" />
+    <file path="/mensaClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371637478127" ignored="false" />
+    <file path="/userClass.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371722838145" ignored="false" />
+    <file path="$PROJECT_DIR$/../htwgbackend/htwgapp/webapp/person.php" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371724848137" ignored="false" />
+    <file path="/extras.css" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371728004067" ignored="false" />
+    <file path="/mensa.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371733169893" ignored="false" />
+    <file path="/quota.html" changelist="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" time="1371734391918" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,32 +78,95 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="frontend" />
+    <favorites_list name="HTWGizzle" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mensa.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/mensa.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="153" column="6" selection-start="6116" selection-end="6116" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="72" column="32" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detailSchedule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/detailSchedule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="18" selection-start="430" selection-end="1840" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schedule.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/schedule.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="42" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quota.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/quota.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="44" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/messages.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="66" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="89" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="35" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="boot.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/partials/boot.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.06035503">
+            <state line="35" column="92" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.031894933">
               <folding />
             </state>
           </provider>
@@ -58,10 +179,34 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/partials/dashboard.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/search.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/detailMessage.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/person.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/newMessage.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/personList.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/detailLecture.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/room.html" />
+        <option value="$PROJECT_DIR$/frontend/css/extras.css" />
+        <option value="$PROJECT_DIR$/frontend/partials/dashboard.html" />
+        <option value="$PROJECT_DIR$/frontend/js/app.js" />
+        <option value="$PROJECT_DIR$/frontend/js/services.js" />
+        <option value="$PROJECT_DIR$/frontend/partials/mensa.html" />
+        <option value="$PROJECT_DIR$/frontend/partials/quota.html" />
+        <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/frontend/js/controller.js" />
+        <option value="$PROJECT_DIR$/frontend/partials/schedule.html" />
       </list>
     </option>
   </component>
@@ -69,8 +214,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1296" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -106,16 +251,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -124,13 +259,34 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="liveEdit" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../htwgbackend/htwgapp" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\htwg\frontend\partials" />
+      <recent name="C:\xampp\htdocs\htwg\frontend\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\htwg" />
+    </key>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -153,30 +309,44 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fc7a316e-455d-489e-98a1-dcb15d638032" name="Default" comment="" />
-      <created>1370272118165</created>
-      <updated>1370272118165</updated>
+      <changelist id="afe39ca8-900e-4b5b-b7f7-fbecd7cb99e2" name="Default" comment="" />
+      <created>1370868402227</created>
+      <updated>1370868402227</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix messagecontroller">
+      <created>1371223087389</created>
+      <updated>1371223087389</updated>
+    </task>
+    <task id="LOCAL-00002" summary="aktueller stand">
+      <created>1371724707077</created>
+      <updated>1371724707077</updated>
+    </task>
+    <task id="LOCAL-00003" summary="aktueller stand -2">
+      <created>1371731880792</created>
+      <updated>1371731880792</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24919957" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10779082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16126418" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -224,7 +394,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="aktueller stand" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -238,98 +408,110 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="fix messagecontroller" />
+    <MESSAGE value="aktueller stand -2" />
+    <MESSAGE value="aktueller stand" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/partials/newMessage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="32" column="20" selection-start="1374" selection-end="1374" vertical-scroll-proportion="-15.038462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/personList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="30" selection-start="1371" selection-end="1371" vertical-scroll-proportion="-22.884615" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/detailLecture.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="453" selection-end="453" vertical-scroll-proportion="-5.8846154" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="681" selection-end="681" vertical-scroll-proportion="-12.423077" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/extras.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="11" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+        <state line="43" column="23" selection-start="1524" selection-end="1524" vertical-scroll-proportion="-28.115385" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="66" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/boot.html">
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="89" selection-start="2872" selection-end="2872" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/messages.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/partials/quota.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="40" column="44" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
+        <state line="153" column="6" selection-start="6116" selection-end="6116" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/partials/detailSchedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="38" column="18" selection-start="430" selection-end="1840" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/partials/mensa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
+        <state line="12" column="42" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/partials/schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
+        <state line="12" column="42" selection-start="530" selection-end="530" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="35" selection-start="1960" selection-end="1960" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="72" column="32" selection-start="2236" selection-end="2236" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="1495" selection-end="1495" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/boot.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="122" selection-end="122" vertical-scroll-proportion="0.06035503">
+        <state line="35" column="92" selection-start="1946" selection-end="1946" vertical-scroll-proportion="0.031894933">
           <folding />
         </state>
       </provider>

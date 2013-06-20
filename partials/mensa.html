@@ -9,8 +9,8 @@
             </nav>
         </header>
         <article id="mensaList" class="list indented active scroll">
-            <div ng-repeat="(date,day) in mensa">
-                <li class="dark">{{date}}</li>
+            <div ng-repeat="day in mensa">
+                <li class="dark">{{day.day}}</li>
                 <li class="{{day.stammessen}}" data-icon="food">
                     <strong>
                         Stammessen
